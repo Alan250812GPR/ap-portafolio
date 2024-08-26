@@ -5,6 +5,9 @@ import Footer from "./components/Layout/Footer/Footer";
 import LoadingSpinner from "./components/LoadingSpinner/LoadingSpinner";
 //views
 import Home from "./components/Home/Home";
+import Budget from "./components/Budget/Budget";
+import  Tecnologys from "./components/Tecnologys/Tecnologys";
+import  Projects from "./components/Projects/Projects";
 //Routes
 import { BrowserRouter as Router, Route, Routes, useLocation } from 'react-router-dom';
 import React, { useState, useEffect } from 'react';
@@ -40,6 +43,9 @@ function App() {
     <Layout>
       <Routes>
         <Route path="/" element={<Home/>} />
+        <Route path="/Budget" element={<Budget />} />
+        <Route path="/Tecnologys" element={<Tecnologys />} />
+        <Route path="/Projects" element={<Projects />} />
       </Routes>
     </Layout>
   </Router> 
