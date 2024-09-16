@@ -1,6 +1,6 @@
 import About from "../AboutMe/aboutMe";
 import React from 'react';
-import myPdfIcon from '../../../public/pdf.svg';
+import myPdfIcon from '../../assets/pdf.svg';
 
   const ResumeSpanish = () => {
     const pdfUrl = '../../assets/PDF/Alan Resume Spanish.pdf'; // Ruta relativa desde la raíz del servidor
