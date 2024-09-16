@@ -1,5 +1,6 @@
 import { Typography } from "@material-tailwind/react";
 import { Link, useNavigate } from "react-router-dom";
+import DevAP from '../../../assets/DevAP.svg';
 
 const Footer = () => {
   return (
@@ -8,7 +9,7 @@ const Footer = () => {
         <Link
               to="/"
               >
-              <img src="../../../assets/DevAP.svg" alt="logo-ct" className="w-10" />
+              <img src={DevAP} alt="logo-ct" className="w-10" />
               </Link>
         <ul className="flex flex-wrap items-center gap-y-2 gap-x-8">
           <li>

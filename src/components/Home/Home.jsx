@@ -1,9 +1,12 @@
 import About from "../AboutMe/aboutMe";
 import React from 'react';
 import myPdfIcon from '../../assets/pdf.svg';
+import cvSpanish from '../../assets/PDF/Alan Resume Spanish.pdf';
+import cvEnglish from '../../assets/PDF/Alan Resume English.pdf';
+import AlanParraProfile from '../../assets/AlanParraProfile.jpg';
 
   const ResumeSpanish = () => {
-    const pdfUrl = '../../assets/PDF/Alan Resume Spanish.pdf'; // Ruta relativa desde la raíz del servidor
+    const pdfUrl = {cvSpanish}; // Ruta relativa desde la raíz del servidor
     const link = document.createElement('a');
     link.href = pdfUrl;
     link.download = 'AlanParraCV.pdf';
@@ -13,7 +16,7 @@ import myPdfIcon from '../../assets/pdf.svg';
   };
 
   const ResumeEnglish = () => {
-    const pdfUrl = '../../assets/PDF/Alan Resume English.pdf'; // Ruta relativa desde la raíz del servidor
+    const pdfUrl = {cvEnglish}; // Ruta relativa desde la raíz del servidor
     const link = document.createElement('a');
     link.href = pdfUrl;
     link.download = 'AlanParraCV.pdf';
@@ -31,7 +34,7 @@ const Home = () => {
       <div className="col-span-1 sm:col-span-2 sm:row-span-3 sm:col-start-4 sm:justify-end">
         <img
           alt=""
-          src="../../assets/AlanParraProfile.jpg"
+          src={AlanParraProfile}
           className="h-40 sm:h-60 w-40 sm:w-60 bg-slate-200 content-end"
         />
       </div>

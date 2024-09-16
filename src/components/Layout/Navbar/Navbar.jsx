@@ -4,6 +4,7 @@ import { Link, useNavigate } from "react-router-dom";
 import Linkedin from '../../../assets/linkedin.png'
 import Github from '../../../assets/github.png'
 import Whatsapp from '../../../assets/Whatsapp.png'
+import devAlan from '../../../assets/DevAP.svg';
 
 const navigation = [
   { name: 'Inicio', href: '/', current: false },
@@ -37,7 +38,7 @@ const Navbar = () => {
               >
               <img
                 alt="Your Company"
-                src="../../../assets/DevAP.svg"
+                src={devAlan}
                 className="h-8 w-auto"
               />
               </Link>
