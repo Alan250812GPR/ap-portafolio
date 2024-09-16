@@ -3,7 +3,7 @@ import React from 'react';
 import myPdfIcon from '../../../public/pdf.svg';
 
   const ResumeSpanish = () => {
-    const pdfUrl = '../../../public/PDF/Alan Resume Spanish.pdf'; // Ruta relativa desde la raíz del servidor
+    const pdfUrl = '../../assets/PDF/Alan Resume Spanish.pdf'; // Ruta relativa desde la raíz del servidor
     const link = document.createElement('a');
     link.href = pdfUrl;
     link.download = 'AlanParraCV.pdf';
@@ -13,7 +13,7 @@ import myPdfIcon from '../../../public/pdf.svg';
   };
 
   const ResumeEnglish = () => {
-    const pdfUrl = '../../../public/PDF/Alan Resume English.pdf'; // Ruta relativa desde la raíz del servidor
+    const pdfUrl = '../../assets/PDF/Alan Resume English.pdf'; // Ruta relativa desde la raíz del servidor
     const link = document.createElement('a');
     link.href = pdfUrl;
     link.download = 'AlanParraCV.pdf';

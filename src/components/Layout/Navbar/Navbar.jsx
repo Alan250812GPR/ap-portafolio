@@ -1,9 +1,9 @@
 import { Disclosure, DisclosureButton, DisclosurePanel, Menu, MenuButton, MenuItem, MenuItems } from '@headlessui/react';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 import { Link, useNavigate } from "react-router-dom";
-import Linkedin from '../../../../public/linkedin.png'
-import Github from '../../../../public/github.png'
-import Whatsapp from '../../../../public/Whatsapp.png'
+import Linkedin from '../../../assets/linkedin.png'
+import Github from '../../../assets/github.png'
+import Whatsapp from '../../../assets/Whatsapp.png'
 
 const navigation = [
   { name: 'Inicio', href: '/', current: false },
@@ -37,7 +37,7 @@ const Navbar = () => {
               >
               <img
                 alt="Your Company"
-                src="../../../../public/DevAP.svg"
+                src="../../../assets/DevAP.svg"
                 className="h-8 w-auto"
               />
               </Link>

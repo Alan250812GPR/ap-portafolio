@@ -8,7 +8,7 @@ const Footer = () => {
         <Link
               to="/"
               >
-              <img src="../../../../public/DevAP.svg" alt="logo-ct" className="w-10" />
+              <img src="../../../assets/DevAP.svg" alt="logo-ct" className="w-10" />
               </Link>
         <ul className="flex flex-wrap items-center gap-y-2 gap-x-8">
           <li>
