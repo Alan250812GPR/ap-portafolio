@@ -8,7 +8,7 @@ import { jwtDecode } from "jwt-decode";
 import { Link, useNavigate } from "react-router-dom";
 
 const Budget = () => {
-  document.title = "Iniciar sesión";
+  //document.title = "Presupuestos";
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   }, []);

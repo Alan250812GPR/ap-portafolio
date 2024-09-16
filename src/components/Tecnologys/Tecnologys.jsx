@@ -124,7 +124,19 @@ const images = [
 ];
 
 const Tecnologys = () => {
-    return <Gallery images={images} />;
+  return (
+    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+      {images.map((image, index) => (
+        <img
+          key={index}
+          src={image.src}
+          alt={`Technology  
+ ${index + 1}`}
+          className="object-scale-down h-full w-full rounded-lg"
+        />
+      ))}
+    </div>
+  );
   };
   
   export default Tecnologys;

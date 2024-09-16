@@ -69,7 +69,7 @@ const Navbar = () => {
                   <span className="sr-only">Contacto</span>
                   <img
                     alt=""
-                    src="https://media.licdn.com/dms/image/v2/D4E35AQHFQoXK-q6_cA/profile-framedphoto-shrink_200_200/profile-framedphoto-shrink_200_200/0/1718979281074?e=1725249600&v=beta&t=h1_2lU_2QjVmr8LyYjDlGMhr36zbiwDknLwCEGiFqPQ"
+                    src="https://avatars.githubusercontent.com/u/38467231?v=4"
                     className="h-8 w-8 rounded-full"
                   />
                 </MenuButton>
@@ -80,17 +80,17 @@ const Navbar = () => {
               >
                 <MenuItem>
                 
-                  <a href="https://www.linkedin.com/in/alan-g-parra-robledo-617a4a138/" className="block px-4 py-2 text-sm text-gray-700 data-[focus]:bg-gray-100">
+                  <a href="https://www.linkedin.com/in/alan-g-parra-robledo-617a4a138/" target="_blank" className="block px-4 py-2 text-sm text-gray-700 data-[focus]:bg-gray-100">
                   <img className="w-4 h-4" src={Linkedin}/> Linkedin
                   </a>
                 </MenuItem>
                 <MenuItem>
-                  <a href="https://github.com/Alan250812GPR" className="block px-4 py-2 text-sm text-gray-700 data-[focus]:bg-gray-100">
+                  <a href="https://github.com/Alan250812GPR" target="_blank" className="block px-4 py-2 text-sm text-gray-700 data-[focus]:bg-gray-100">
                   <img className="w-4 h-4" src={Github}/> Github
                   </a>
                 </MenuItem>
                 <MenuItem>
-                  <a href="https://api.whatsapp.com/send?phone=5213334589543&text=Hola%20Alan%20vi%20tu%20portafolio%20y%20me%20intetesa%20tu%20perfil%20%F0%9F%A4%91%F0%9F%91%80" className="block px-4 py-2 text-sm text-gray-700 data-[focus]:bg-gray-100">
+                  <a href="https://api.whatsapp.com/send?phone=5213334589543&text=Hola%20Alan%20vi%20tu%20portafolio%20y%20me%20intetesa%20tu%20perfil%20%F0%9F%A4%91%F0%9F%91%80" target="_blank" className="block px-4 py-2 text-sm text-gray-700 data-[focus]:bg-gray-100">
                   <img className="w-4 h-4" src={Whatsapp}/> Whatsapp
                   </a>
                 </MenuItem>
