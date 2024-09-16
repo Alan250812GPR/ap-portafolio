@@ -31,7 +31,7 @@ const Home = () => {
       <div className="col-span-1 sm:col-span-2 sm:row-span-3 sm:col-start-4 sm:justify-end">
         <img
           alt=""
-          src="../../../public/AlanParraProfile.jpg"
+          src="../../assets/AlanParraProfile.jpg"
           className="h-40 sm:h-60 w-40 sm:w-60 bg-slate-200 content-end"
         />
       </div>
