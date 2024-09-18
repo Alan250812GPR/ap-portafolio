@@ -1,28 +1,27 @@
 import About from "../AboutMe/aboutMe";
 import React from 'react';
 import myPdfIcon from '../../assets/pdf.svg';
-import cvSpanish from '../../assets/PDF/Alan Resume Spanish.pdf';
-import cvEnglish from '../../assets/PDF/Alan Resume English.pdf';
 import AlanParraProfile from '../../assets/AlanParraProfile.jpg';
 
   const ResumeSpanish = () => {
-    const pdfUrl = {cvSpanish}; // Ruta relativa desde la raíz del servidor
+    const currentUrl = 'https://drive.google.com/file/d/18OaEhEJqxJZyG1ElrbmwVYJq-kvKwuYY/view?usp=sharing';
+  
     const link = document.createElement('a');
-    link.href = pdfUrl;
-    link.download = 'https://drive.google.com/file/d/18OaEhEJqxJZyG1ElrbmwVYJq-kvKwuYY/view?usp=sharing';
-    document.body.appendChild(link);
+    link.href = currentUrl;
+    link.target = "_blank";
+  
     link.click();
-    document.body.removeChild(link);
   };
 
   const ResumeEnglish = () => {
-    const pdfUrl = {cvEnglish}; // Ruta relativa desde la raíz del servidor
+    
+    const currentUrl = 'https://drive.google.com/file/d/1C7UV5Vr-aJz0xibOAOPivADML8OiQHZw/view?usp=sharing';
+  
     const link = document.createElement('a');
-    link.href = pdfUrl;
-    link.download = 'https://drive.google.com/file/d/1C7UV5Vr-aJz0xibOAOPivADML8OiQHZw/view?usp=sharing';
-    document.body.appendChild(link);
+    link.href = currentUrl;
+    link.target = "_blank";
+  
     link.click();
-    document.body.removeChild(link);
   };
 
 const Home = () => {
