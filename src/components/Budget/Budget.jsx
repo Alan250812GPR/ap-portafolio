@@ -108,7 +108,7 @@ const Budget = () => {
     <label for="terms" className="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Acepto <Link to="/" className="text-blue-600 hover:underline dark:text-blue-500">terminos y condiciones</Link></label>
   </div>
   <ReCAPTCHA
-              sitekey="6LdEIRYqAAAAABWJJvkrc2zHtptd9Oyd52ULlXa0"
+              sitekey="6LcQn0cqAAAAAJ2nvwE3fRZ_IA0HZ1SGJhIem4yD"
               onChange={onChange}
               className="mb-5"
             />
