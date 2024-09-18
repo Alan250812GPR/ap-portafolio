@@ -1,10 +1,8 @@
 import { useState } from "react";
 import React, { useEffect } from "react";
-import Cookies from "js-cookie";
 import axios from "axios";
 import Swal from "sweetalert2";
 import ReCAPTCHA from "react-google-recaptcha";
-import { jwtDecode } from "jwt-decode";
 import { Link, useNavigate } from "react-router-dom";
 
 const Budget = () => {
@@ -12,8 +10,6 @@ const Budget = () => {
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   }, []);
-  const [user, setUser] = useState("");
-  const [password, setPassword] = useState("");
   const [error, setError] = useState("");
   const [button, setButton] = useState("");
   const navigate = useNavigate();
@@ -22,50 +18,6 @@ const Budget = () => {
   function onChange(value) {
     setButton(true);
   }
-
-  const handleLogin = async (event) => {
-    event.preventDefault();
-
-    // Encriptar la contraseña en base64
-    const encryptedPassword = encodeBase64(password);
-
-    try {
-      const response = await axios.post(`${apiUrl}/api/Customer/Contac`, {
-        userName: user,
-        userPassword: encryptedPassword,
-      });
-
-      const { jwt } = response.data;
-
-      // Guardar el JWT en una cookie con duración de 2 horas
-      Cookies.set("auth_token", jwt, { expires: 2 / 24 });
-
-      console.log("cookie:", Cookies.get("auth_token"));
-
-      const decodedToken = jwtDecode(jwt);
-
-      // Guardar el usuario en localStorage
-      localStorage.setItem("user", JSON.stringify(decodedToken));
-      const userId = decodedToken.nameid;
-
-      Swal.fire({
-        icon: "success",
-        title: "Inicio de sesión exitoso!",
-        showConfirmButton: false,
-        timer: 1500,
-      }).then(() => {
-        // Redirigir después de que la alerta se haya cerrado
-        navigate(`/profile/${userId}`);
-      });
-    } catch (error) {
-      setError("Nombre de usuario o contraseña invalida.");
-      Swal.fire({
-        icon: "error",
-        title: "Oops...",
-        text: "Nombre de usuario o contraseña invalida.",
-      });
-    }
-  };
 
   return (
 <form className="max-w-md mx-auto my-8 max-sm:ml-5 max-sm:mr-5">
@@ -108,7 +60,7 @@ const Budget = () => {
     <label for="terms" className="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Acepto <Link to="/" className="text-blue-600 hover:underline dark:text-blue-500">terminos y condiciones</Link></label>
   </div>
   <ReCAPTCHA
-              sitekey="6LcQn0cqAAAAAJ2nvwE3fRZ_IA0HZ1SGJhIem4yD"
+              sitekey="6LesmUgqAAAAAJWomvk71YZBBTbbRSVR_ldi2yfp"
               onChange={onChange}
               className="mb-5"
             />
