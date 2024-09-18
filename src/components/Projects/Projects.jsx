@@ -181,6 +181,24 @@ const cardsData = [
     imageUrl: "https://example.com/image2.jpg",
     url: "https://example.com/link2",
   },
+  {
+    id: 31,
+    title: "Divemex Apps",
+    imageUrl: "https://example.com/image2.jpg",
+    url: "https://example.com/link2",
+  },
+  {
+    id: 32,
+    title: "Fabrica Empresarial",
+    imageUrl: "https://example.com/image2.jpg",
+    url: "https://example.com/link2",
+  },
+  {
+    id: 33,
+    title: "Basculas Fleximatic",
+    imageUrl: "https://example.com/image2.jpg",
+    url: "https://example.com/link2",
+  },
 ];
 
 const Card = ({ title, imageUrl, url }) => {

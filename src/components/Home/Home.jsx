@@ -9,7 +9,7 @@ import AlanParraProfile from '../../assets/AlanParraProfile.jpg';
     const pdfUrl = {cvSpanish}; // Ruta relativa desde la raíz del servidor
     const link = document.createElement('a');
     link.href = pdfUrl;
-    link.download = 'AlanParraCV.pdf';
+    link.download = 'https://drive.google.com/file/d/18OaEhEJqxJZyG1ElrbmwVYJq-kvKwuYY/view?usp=sharing';
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
@@ -19,7 +19,7 @@ import AlanParraProfile from '../../assets/AlanParraProfile.jpg';
     const pdfUrl = {cvEnglish}; // Ruta relativa desde la raíz del servidor
     const link = document.createElement('a');
     link.href = pdfUrl;
-    link.download = 'AlanParraCV.pdf';
+    link.download = 'https://drive.google.com/file/d/1C7UV5Vr-aJz0xibOAOPivADML8OiQHZw/view?usp=sharing';
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
