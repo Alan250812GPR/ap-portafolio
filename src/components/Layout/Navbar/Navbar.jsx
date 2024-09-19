@@ -5,6 +5,8 @@ import Linkedin from '../../../assets/linkedin.png'
 import Github from '../../../assets/github.png'
 import Whatsapp from '../../../assets/Whatsapp.png'
 import devAlan from '../../../assets/DevAP.svg';
+import { driver } from "driver.js";
+import "driver.js/dist/driver.css";
 
 const navigation = [
   { name: 'Inicio', href: '/', current: false },
@@ -16,6 +18,16 @@ const navigation = [
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
 }
+
+const driverObj = driver({
+  showProgress: true,
+  showButtons: ['next', 'previous'],
+  steps: [
+    { element: '#Photo', popover: { title: 'Donde me puedes contactar', description: 'Aqui encontraras los principales lugares donde podras encontrarme.', side: "left", align: 'start' }}
+  ]
+});
+
+driverObj.drive();
 
 const Navbar = () => {
   return (
@@ -69,6 +81,7 @@ const Navbar = () => {
                   <span className="absolute -inset-1.5" />
                   <span className="sr-only">Contacto</span>
                   <img
+                    id="Photo"
                     alt=""
                     src="https://avatars.githubusercontent.com/u/38467231?v=4"
                     className="h-8 w-8 rounded-full"
