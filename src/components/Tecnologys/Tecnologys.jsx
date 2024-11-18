@@ -1,10 +1,5 @@
 const images = [
    {
-      src: "https://mazamitlasierratours.com/tec/Abap.jpeg",
-      width: 320,
-      height: 212,
-   },
-   {
     src: "https://mazamitlasierratours.com/tec/Angular_full_color_logo.svg.png",
     width: 320,
     height: 212,
