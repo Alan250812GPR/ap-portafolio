@@ -59,7 +59,7 @@ const Budget = () => {
             const { MailCustomer, NameCustomer, LastnameCustomer, PhoneCustomer, CompanyCustomer, MessageCustomer } = formData;
 
             const { data, error } = await supabase
-                .from('your_table_name') // Reemplaza 'your_table_name' con el nombre real de tu tabla (ej. 'Columns' o 'customers')
+                .from('Datos') // Reemplaza 'your_table_name' con el nombre real de tu tabla (ej. 'Columns' o 'customers')
                 .insert([
                     {
                         MailCustomer: MailCustomer,
