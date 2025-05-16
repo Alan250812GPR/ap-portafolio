@@ -19,16 +19,6 @@ function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
 }
 
-const driverObj = driver({
-  showProgress: true,
-  showButtons: ['next', 'previous'],
-  steps: [
-    { element: '#Photo', popover: { title: 'Donde me puedes contactar', description: 'Aqui encontraras los principales lugares donde podras encontrarme.', side: "left", align: 'start' }}
-  ]
-});
-
-driverObj.drive();
-
 const Navbar = () => {
   return (
       <Disclosure as="nav" className="bg-gray-800">
