@@ -30,12 +30,12 @@ const images = [
     height: 320,
   },
   {
-    src: "https://upload.wikimedia.org/wikipedia/commons/e/ee/MariaDB_Logo.svg",
+    src: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Mariadb-seal-browntext.svg/512px-Mariadb-seal-browntext.svg.png",
     width: 320,
     height: 180, // Adjusted height for better aspect ratio with SVG
   },
   {
-    src: "https://upload.wikimedia.org/wikipedia/commons/e/ee/.NET_Logo.svg",
+    src: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Microsoft_.NET_logo.svg/250px-Microsoft_.NET_logo.svg.png",
     width: 320,
     height: 180, // Adjusted height for better aspect ratio with SVG
   },
@@ -50,7 +50,7 @@ const images = [
     height: 180, // Adjusted height for better aspect ratio with SVG
   },
   {
-    src: "https://upload.wikimedia.org/wikipedia/en/e/ee/RabbitMQ_logo.png",
+    src: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/RabbitMQ_logo.svg/172px-RabbitMQ_logo.svg.png",
     width: 320,
     height: 212,
   },
@@ -60,12 +60,12 @@ const images = [
     height: 280, // Adjusted height for better aspect ratio with SVG
   },
   {
-    src: "https://upload.wikimedia.org/wikipedia/en/8/8c/Microsoft_SQL_Server_Logo.svg",
+    src: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Microsoft_SQL_Server_2025_icon.svg/48px-Microsoft_SQL_Server_2025_icon.svg.png",
     width: 320,
     height: 212,
   },
   {
-    src: "https://upload.wikimedia.org/wikipedia/commons/7/74/Symfony_logo.svg",
+    src: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Symfony2.svg/235px-Symfony2.svg.png",
     width: 320,
     height: 180, // Adjusted height for better aspect ratio with SVG
   },
@@ -80,37 +80,37 @@ const images = [
     height: 320,
   },
   {
-    src: "https://upload.wikimedia.org/wikipedia/commons/9/91/Ubuntu_logo_transparent_background.png",
+    src: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Ubuntu-logo-no-wordmark-solid-o-2022.svg/250px-Ubuntu-logo-no-wordmark-solid-o-2022.svg.png",
     width: 320,
     height: 320,
   },
   {
-    src: "https://upload.wikimedia.org/wikipedia/commons/e/ee/Visual_Basic_logo.svg",
+    src: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/VB.NET_Logo.svg/250px-VB.NET_Logo.svg.png",
     width: 320,
     height: 320,
   },
   {
-    src: "https://upload.wikimedia.org/wikipedia/commons/f/f6/Vitejs_logo.svg",
+    src: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Vitejs-logo.svg/250px-Vitejs-logo.svg.png",
     width: 320,
     height: 320,
   },
   {
-    src: "https://upload.wikimedia.org/wikipedia/commons/f/fd/WINDEV_logo.png", // This seems to be the most common freely available.
+    src: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Windev_20_User_Manual_Book.jpg/250px-Windev_20_User_Manual_Book.jpg", // This seems to be the most common freely available.
     width: 320,
     height: 212,
   },
   {
-    src: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Windows_Server_2016_logo.svg/320px-Windows_Server_2016_logo.svg.png", // Using a specific version that's common.
+    src: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Windows_Server_logo.svg/1277px-Windows_Server_logo.svg.png", // Using a specific version that's common.
     width: 320,
     height: 212,
   },
   {
-    src: "https://upload.wikimedia.org/wikipedia/commons/2/24/Xamarin_logo.svg",
+    src: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Xamarin_logo_and_wordmark.png/960px-Xamarin_logo_and_wordmark.png",
     width: 320,
     height: 320,
   },
   {
-    src: "https://upload.wikimedia.org/wikipedia/commons/a/a2/Yarn_logo_transparent_background.svg",
+    src: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Yarn-logo-circle.svg/250px-Yarn-logo-circle.svg.png",
     width: 320,
     height: 320,
   },
