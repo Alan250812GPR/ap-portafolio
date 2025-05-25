@@ -1,119 +1,119 @@
 const images = [
-   {
-    src: "https://mazamitlasierratours.com/tec/Angular_full_color_logo.svg.png",
+  {
+    src: "https://upload.wikimedia.org/wikipedia/commons/c/cf/Angular_full_color_logo.svg",
+    width: 320,
+    height: 320, // Adjusted height for better aspect ratio with SVG
+  },
+  {
+    src: "https://upload.wikimedia.org/wikipedia/commons/b/b2/Bootstrap_logo.svg",
+    width: 320,
+    height: 280, // Adjusted height for better aspect ratio with SVG
+  },
+  {
+    src: "https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg",
+    width: 320,
+    height: 320,
+  },
+  {
+    src: "https://upload.wikimedia.org/wikipedia/commons/9/99/Unofficial_JavaScript_logo_2.svg",
+    width: 320,
+    height: 320,
+  },
+  {
+    src: "https://upload.wikimedia.org/wikipedia/commons/9/9a/Laravel.svg",
+    width: 320,
+    height: 320,
+  },
+  {
+    src: "https://upload.wikimedia.org/wikipedia/commons/4/4f/Csharp_Logo.png",
+    width: 320,
+    height: 320,
+  },
+  {
+    src: "https://upload.wikimedia.org/wikipedia/commons/e/ee/MariaDB_Logo.svg",
+    width: 320,
+    height: 180, // Adjusted height for better aspect ratio with SVG
+  },
+  {
+    src: "https://upload.wikimedia.org/wikipedia/commons/e/ee/.NET_Logo.svg",
+    width: 320,
+    height: 180, // Adjusted height for better aspect ratio with SVG
+  },
+  {
+    src: "https://upload.wikimedia.org/wikipedia/commons/f/fa/Microsoft_Azure.svg",
+    width: 320,
+    height: 280, // Adjusted height for better aspect ratio with SVG
+  },
+  {
+    src: "https://upload.wikimedia.org/wikipedia/commons/2/27/PHP-logo.svg",
+    width: 320,
+    height: 180, // Adjusted height for better aspect ratio with SVG
+  },
+  {
+    src: "https://upload.wikimedia.org/wikipedia/en/e/ee/RabbitMQ_logo.png",
     width: 320,
     height: 212,
- },
- {
-  src: "https://mazamitlasierratours.com/tec/Bootstrap_logo.svg",
-  width: 320,
-  height: 212,
-},
-{
-  src: "https://mazamitlasierratours.com/tec/Html_Css.jpeg",
-  width: 320,
-  height: 212,
-},
-{
-  src: "https://mazamitlasierratours.com/tec/Js.png",
-  width: 320,
-  height: 212,
-},
-{
-  src: "https://mazamitlasierratours.com/tec/Laravel.svg.png",
-  width: 320,
-  height: 212,
-},
-{
-  src: "https://mazamitlasierratours.com/tec/Logo-csharp.webp",
-  width: 320,
-  height: 212,
-},
-{
-  src: "https://mazamitlasierratours.com/tec/MariaDB_Logo.png",
-  width: 320,
-  height: 212,
-},
-{
-  src: "https://mazamitlasierratours.com/tec/Microsoft_.NET_logo.svg.png",
-  width: 320,
-  height: 212,
-},
-{
-  src: "https://mazamitlasierratours.com/tec/Microsoft_Azure.svg.png",
-  width: 320,
-  height: 212,
-},
-{
-  src: "https://mazamitlasierratours.com/tec/PHP-logo.svg.png",
-  width: 320,
-  height: 212,
-},
-{
-  src: "https://mazamitlasierratours.com/tec/Rabbit.png",
-  width: 320,
-  height: 212,
-},
-{
-  src: "https://mazamitlasierratours.com/tec/React_logo.png",
-  width: 320,
-  height: 212,
-},
-{
-  src: "https://mazamitlasierratours.com/tec/SqlServer.png",
-  width: 320,
-  height: 212,
-},
-{
-  src: "https://mazamitlasierratours.com/tec/Symfony.png",
-  width: 320,
-  height: 212,
-},
-{
-  src: "https://mazamitlasierratours.com/tec/tailwindcss.png",
-  width: 320,
-  height: 212,
-},
-{
-  src: "https://mazamitlasierratours.com/tec/Typescript_logosvg.png",
-  width: 320,
-  height: 212,
-},
-{
-  src: "https://mazamitlasierratours.com/tec/ubuntu.png",
-  width: 320,
-  height: 212,
-},
-{
-  src: "https://mazamitlasierratours.com/tec/VB.png",
-  width: 320,
-  height: 212,
-},
-{
-  src: "https://mazamitlasierratours.com/tec/Vite.svg",
-  width: 320,
-  height: 212,
-},
-{
-  src: "https://mazamitlasierratours.com/tec/Windev.png",
-  width: 320,
-  height: 212,
-},
-{
-  src: "https://mazamitlasierratours.com/tec/wserver.png",
-  width: 320,
-  height: 212,
-},
-{
-  src: "https://mazamitlasierratours.com/tec/Xamarin-logo.svg.png",
-  width: 320,
-  height: 212,
-},
-{
-  src: "https://mazamitlasierratours.com/tec/yarn.png",
-  width: 320,
-  height: 212,
-},
+  },
+  {
+    src: "https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg",
+    width: 320,
+    height: 280, // Adjusted height for better aspect ratio with SVG
+  },
+  {
+    src: "https://upload.wikimedia.org/wikipedia/en/8/8c/Microsoft_SQL_Server_Logo.svg",
+    width: 320,
+    height: 212,
+  },
+  {
+    src: "https://upload.wikimedia.org/wikipedia/commons/7/74/Symfony_logo.svg",
+    width: 320,
+    height: 180, // Adjusted height for better aspect ratio with SVG
+  },
+  {
+    src: "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg",
+    width: 320,
+    height: 190, // Adjusted height for better aspect ratio with SVG
+  },
+  {
+    src: "https://upload.wikimedia.org/wikipedia/commons/4/4c/Typescript_logo_2020.svg",
+    width: 320,
+    height: 320,
+  },
+  {
+    src: "https://upload.wikimedia.org/wikipedia/commons/9/91/Ubuntu_logo_transparent_background.png",
+    width: 320,
+    height: 320,
+  },
+  {
+    src: "https://upload.wikimedia.org/wikipedia/commons/e/ee/Visual_Basic_logo.svg",
+    width: 320,
+    height: 320,
+  },
+  {
+    src: "https://upload.wikimedia.org/wikipedia/commons/f/f6/Vitejs_logo.svg",
+    width: 320,
+    height: 320,
+  },
+  {
+    src: "https://upload.wikimedia.org/wikipedia/commons/f/fd/WINDEV_logo.png", // This seems to be the most common freely available.
+    width: 320,
+    height: 212,
+  },
+  {
+    src: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Windows_Server_2016_logo.svg/320px-Windows_Server_2016_logo.svg.png", // Using a specific version that's common.
+    width: 320,
+    height: 212,
+  },
+  {
+    src: "https://upload.wikimedia.org/wikipedia/commons/2/24/Xamarin_logo.svg",
+    width: 320,
+    height: 320,
+  },
+  {
+    src: "https://upload.wikimedia.org/wikipedia/commons/a/a2/Yarn_logo_transparent_background.svg",
+    width: 320,
+    height: 320,
+  },
 ];
 
 const Tecnologys = () => {
