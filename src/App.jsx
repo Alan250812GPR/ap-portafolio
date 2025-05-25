@@ -9,7 +9,8 @@ import Budget from "./components/Budget/Budget";
 import  Tecnologys from "./components/Tecnologys/Tecnologys";
 import  Projects from "./components/Projects/Projects";
 //Routes
-import { BrowserRouter as Router, Route, Routes, useLocation } from 'react-router-dom';
+// CAMBIO IMPORTANTE AQUÍ: Cambiamos BrowserRouter por HashRouter
+import { HashRouter as Router, Route, Routes, useLocation } from 'react-router-dom';
 import React, { useState, useEffect } from 'react';
 
 function Layout({ children }) {
@@ -27,28 +28,33 @@ function Layout({ children }) {
   }, [location]);
 
   return (
-    <>
-      {loading && <LoadingSpinner />} {/* Muestra la pantalla de carga si loading es true */}
-      {!hideNavbarFooter.includes(location.pathname) && <Navbar />}
-      {children}
-      {!hideNavbarFooter.includes(location.pathname) && <Footer />}
-    </>
+      <>
+        {loading && <LoadingSpinner />} {/* Muestra la pantalla de carga si loading es true */}
+        {/* IMPORTANTE: Cuando usas HashRouter, location.pathname seguirá siendo la parte de la ruta sin el hash.
+        Por ejemplo, si la URL es https://tudominio.com/#/AA, location.pathname seguirá siendo /AA.
+        Así que esta lógica debería seguir funcionando correctamente.
+      */}
+        {!hideNavbarFooter.includes(location.pathname) && <Navbar />}
+        {children}
+        {!hideNavbarFooter.includes(location.pathname) && <Footer />}
+      </>
   );
 }
 
 function App() {
 
   return (
-    <Router>
-    <Layout>
-      <Routes>
-        <Route path="/" element={<Home/>} />
-        <Route path="/Budget" element={<Budget />} />
-        <Route path="/Tecnologys" element={<Tecnologys />} />
-        <Route path="/Projects" element={<Projects />} />
-      </Routes>
-    </Layout>
-  </Router> 
+      // CAMBIO IMPORTANTE AQUÍ: El componente Router ahora es HashRouter
+      <Router>
+        <Layout>
+          <Routes>
+            <Route path="/" element={<Home/>} />
+            <Route path="/Budget" element={<Budget />} />
+            <Route path="/Tecnologys" element={<Tecnologys />} />
+            <Route path="/Projects" element={<Projects />} />
+          </Routes>
+        </Layout>
+      </Router>
   );
 }
 
