@@ -4,7 +4,7 @@ import myPdfIcon from '../../assets/pdf.svg';
 import AlanParraProfile from '../../assets/AlanParraProfile.jpg';
 
   const ResumeSpanish = () => {
-    const currentUrl = 'https://drive.google.com/file/d/18OaEhEJqxJZyG1ElrbmwVYJq-kvKwuYY/view?usp=sharing';
+    const currentUrl = 'https://drive.google.com/file/d/1qgYUjJpyQIMToDvLbWkDA_ayEpk7libr/view?usp=sharing';
   
     const link = document.createElement('a');
     link.href = currentUrl;
@@ -15,7 +15,7 @@ import AlanParraProfile from '../../assets/AlanParraProfile.jpg';
 
   const ResumeEnglish = () => {
     
-    const currentUrl = 'https://drive.google.com/file/d/1C7UV5Vr-aJz0xibOAOPivADML8OiQHZw/view?usp=sharing';
+    const currentUrl = 'https://drive.google.com/file/d/1qgYUjJpyQIMToDvLbWkDA_ayEpk7libr/view?usp=sharing';
   
     const link = document.createElement('a');
     link.href = currentUrl;
