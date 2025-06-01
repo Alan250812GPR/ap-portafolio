@@ -1,12 +1,10 @@
 import { Disclosure, DisclosureButton, DisclosurePanel, Menu, MenuButton, MenuItem, MenuItems } from '@headlessui/react';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import Linkedin from '../../../assets/linkedin.png'
 import Github from '../../../assets/github.png'
 import Whatsapp from '../../../assets/Whatsapp.png'
 import devAlan from '../../../assets/DevAP.svg';
-import { driver } from "driver.js";
-import "driver.js/dist/driver.css";
 
 const navigation = [
   { name: 'Inicio', href: '/', current: false },

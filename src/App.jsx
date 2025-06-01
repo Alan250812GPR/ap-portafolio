@@ -1,15 +1,10 @@
-//Layout
 import Navbar from "./components/Layout/Navbar/Navbar";
 import Footer from "./components/Layout/Footer/Footer";
-//Tools
 import LoadingSpinner from "./components/LoadingSpinner/LoadingSpinner";
-//views
 import Home from "./components/Home/Home";
 import Budget from "./components/Budget/Budget";
 import  Tecnologys from "./components/Tecnologys/Tecnologys";
 import  Projects from "./components/Projects/Projects";
-//Routes
-// CAMBIO IMPORTANTE AQUÍ: Cambiamos BrowserRouter por HashRouter
 import { HashRouter as Router, Route, Routes, useLocation } from 'react-router-dom';
 import React, { useState, useEffect } from 'react';
 
@@ -42,9 +37,7 @@ function Layout({ children }) {
 }
 
 function App() {
-
   return (
-      // CAMBIO IMPORTANTE AQUÍ: El componente Router ahora es HashRouter
       <Router>
         <Layout>
           <Routes>

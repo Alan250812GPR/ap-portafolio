@@ -1,9 +1,8 @@
 import { useState, useEffect } from "react";
-import axios from "axios"; // Aunque no lo usaremos para Supabase, lo mantengo si tienes otros usos
 import Swal from "sweetalert2";
 import ReCAPTCHA from "react-google-recaptcha";
 import { Link, useNavigate } from "react-router-dom";
-import { supabase } from "../../Hooks/supabaseClient"; // Importa el cliente de Supabase
+import { supabase } from "../../Hooks/supabaseClient";
 
 const Budget = () => {
     useEffect(() => {
