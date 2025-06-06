@@ -106,8 +106,8 @@ const Budget = () => {
         }
     };
 
-    // Clases comunes para los inputs basadas en el estilo del textarea
-    const inputClasses = "block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500";
+    // Clases comunes para los inputs y textarea, manteniendo el estilo del textarea
+    const formFieldClasses = "block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500";
 
     return (
         <form className="max-w-md mx-auto my-8 max-sm:ml-5 max-sm:mr-5" onSubmit={handleSubmit}>
@@ -118,13 +118,13 @@ const Budget = () => {
                     type="email"
                     name="floating_email"
                     id="MailCustomer"
-                    className={inputClasses}
-                    placeholder=" "
+                    className={formFieldClasses + " pt-8"} // Añadir padding-top para hacer espacio al label
+                    placeholder=" " // Mantener el placeholder vacío para el efecto de flotación
                     required
                     value={formData.MailCustomer}
                     onChange={handleInputChange}
                 />
-                <label htmlFor="MailCustomer" className="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Correo</label>
+                <label htmlFor="MailCustomer" className="absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-4 scale-75 top-4 left-2 z-10 origin-[0] peer-focus:start-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-4">Correo</label>
             </div>
 
             <div className="grid md:grid-cols-2 md:gap-6">
@@ -133,26 +133,26 @@ const Budget = () => {
                         type="text"
                         name="floating_first_name"
                         id="NameCustomer"
-                        className={inputClasses}
+                        className={formFieldClasses + " pt-8"}
                         placeholder=" "
                         required
                         value={formData.NameCustomer}
                         onChange={handleInputChange}
                     />
-                    <label htmlFor="NameCustomer" className="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Nombre</label>
+                    <label htmlFor="NameCustomer" className="absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-4 scale-75 top-4 left-2 z-10 origin-[0] peer-focus:start-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-4">Nombre</label>
                 </div>
                 <div className="relative z-0 w-full mb-5 group">
                     <input
                         type="text"
                         name="floating_last_name"
                         id="LastnameCustomer"
-                        className={inputClasses}
+                        className={formFieldClasses + " pt-8"}
                         placeholder=" "
                         required
                         value={formData.LastnameCustomer}
                         onChange={handleInputChange}
                     />
-                    <label htmlFor="LastnameCustomer" className="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Apellido</label>
+                    <label htmlFor="LastnameCustomer" className="absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-4 scale-75 top-4 left-2 z-10 origin-[0] peer-focus:start-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-4">Apellido</label>
                 </div>
             </div>
             <div className="grid md:grid-cols-2 md:gap-6">
@@ -160,26 +160,26 @@ const Budget = () => {
                     <input
                         type="text"
                         id="PhoneCustomer"
-                        className={inputClasses}
+                        className={formFieldClasses + " pt-8"}
                         placeholder=" "
                         required
                         value={formData.PhoneCustomer}
                         onChange={handleInputChange}
                     />
-                    <label htmlFor="PhoneCustomer" className="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Celular (+52 123-456-7890)</label>
+                    <label htmlFor="PhoneCustomer" className="absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-4 scale-75 top-4 left-2 z-10 origin-[0] peer-focus:start-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-4">Celular (+52 123-456-7890)</label>
                 </div>
                 <div className="relative z-0 w-full mb-5 group">
                     <input
                         type="text"
                         name="floating_company"
                         id="CompanyCustomer"
-                        className={inputClasses}
+                        className={formFieldClasses + " pt-8"}
                         placeholder=" "
                         required
                         value={formData.CompanyCustomer}
                         onChange={handleInputChange}
                     />
-                    <label htmlFor="CompanyCustomer" className="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Compañía (Ej. SmartRaccoon)</label>
+                    <label htmlFor="CompanyCustomer" className="absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-4 scale-75 top-4 left-2 z-10 origin-[0] peer-focus:start-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-4">Compañía (Ej. SmartRaccoon)</label>
                 </div>
             </div>
 
@@ -187,7 +187,7 @@ const Budget = () => {
             <textarea
                 id="MessageCustomer"
                 rows="4"
-                className={inputClasses + " mb-6"} // Aquí combinamos las clases y añadimos el margen inferior
+                className={formFieldClasses + " mb-6"}
                 placeholder="Mensaje..."
                 value={formData.MessageCustomer}
                 onChange={handleInputChange}
