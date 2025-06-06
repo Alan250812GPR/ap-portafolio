@@ -21,7 +21,7 @@ const Budget = () => {
 
     const [recaptchaVerified, setRecaptchaVerified] = useState(false);
     const [error, setError] = useState("");
-    const [loading, setLoading] = useState(false); // Para el estado del botón de envío
+    const [loading, setLoading] = useState(false);
     const navigate = useNavigate();
 
     const handleInputChange = (e) => {
@@ -33,13 +33,13 @@ const Budget = () => {
     };
 
     const onRecaptchaChange = (value) => {
-        setRecaptchaVerified(!!value); // true if value exists, false otherwise
+        setRecaptchaVerified(!!value);
     };
 
     const handleSubmit = async (e) => {
-        e.preventDefault(); // Previene el envío por defecto del formulario
+        e.preventDefault();
 
-        setError(""); // Limpia cualquier error anterior
+        setError("");
 
         if (!formData.termsAccepted) {
             setError("Debes aceptar los términos y condiciones.");
@@ -51,14 +51,13 @@ const Budget = () => {
             return;
         }
 
-        setLoading(true); // Deshabilita el botón mientras se envía
+        setLoading(true);
 
         try {
-            // Mapea los datos del formulario a los nombres de columna de Supabase
             const { MailCustomer, NameCustomer, LastnameCustomer, PhoneCustomer, CompanyCustomer, MessageCustomer } = formData;
 
             const { data, error } = await supabase
-                .from('Datos') // Reemplaza 'your_table_name' con el nombre real de tu tabla (ej. 'Columns' o 'customers')
+                .from('Datos')
                 .insert([
                     {
                         MailCustomer: MailCustomer,
@@ -69,7 +68,7 @@ const Budget = () => {
                         MessageCustomer: MessageCustomer,
                     }
                 ])
-                .select(); // Opcional: para obtener los datos insertados
+                .select();
 
             if (error) {
                 throw error;
@@ -83,7 +82,6 @@ const Budget = () => {
                 timer: 2000,
             });
 
-            // Limpia el formulario después de un envío exitoso
             setFormData({
                 MailCustomer: "",
                 NameCustomer: "",
@@ -93,10 +91,7 @@ const Budget = () => {
                 MessageCustomer: "",
                 termsAccepted: false,
             });
-            setRecaptchaVerified(false); // Reinicia el reCAPTCHA si es necesario
-
-            // Puedes navegar a otra página o hacer algo más
-            // navigate('/gracias');
+            setRecaptchaVerified(false);
 
         } catch (err) {
             console.error("Error al enviar el formulario a Supabase:", err.message);
@@ -107,9 +102,12 @@ const Budget = () => {
             });
             setError("Hubo un error al enviar tu mensaje. Inténtalo de nuevo.");
         } finally {
-            setLoading(false); // Habilita el botón de nuevo
+            setLoading(false);
         }
     };
+
+    // Clases comunes para los inputs basadas en el estilo del textarea
+    const inputClasses = "block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500";
 
     return (
         <form className="max-w-md mx-auto my-8 max-sm:ml-5 max-sm:mr-5" onSubmit={handleSubmit}>
@@ -119,8 +117,8 @@ const Budget = () => {
                 <input
                     type="email"
                     name="floating_email"
-                    id="MailCustomer" // Usa el nombre de la columna de Supabase como ID
-                    className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                    id="MailCustomer"
+                    className={inputClasses}
                     placeholder=" "
                     required
                     value={formData.MailCustomer}
@@ -134,8 +132,8 @@ const Budget = () => {
                     <input
                         type="text"
                         name="floating_first_name"
-                        id="NameCustomer" // Usa el nombre de la columna de Supabase como ID
-                        className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                        id="NameCustomer"
+                        className={inputClasses}
                         placeholder=" "
                         required
                         value={formData.NameCustomer}
@@ -147,8 +145,8 @@ const Budget = () => {
                     <input
                         type="text"
                         name="floating_last_name"
-                        id="LastnameCustomer" // Usa el nombre de la columna de Supabase como ID
-                        className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                        id="LastnameCustomer"
+                        className={inputClasses}
                         placeholder=" "
                         required
                         value={formData.LastnameCustomer}
@@ -161,8 +159,8 @@ const Budget = () => {
                 <div className="relative z-0 w-full mb-5 group">
                     <input
                         type="text"
-                        id="PhoneCustomer" // Usa el nombre de la columna de Supabase como ID
-                        className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                        id="PhoneCustomer"
+                        className={inputClasses}
                         placeholder=" "
                         required
                         value={formData.PhoneCustomer}
@@ -174,8 +172,8 @@ const Budget = () => {
                     <input
                         type="text"
                         name="floating_company"
-                        id="CompanyCustomer" // Usa el nombre de la columna de Supabase como ID
-                        className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                        id="CompanyCustomer"
+                        className={inputClasses}
                         placeholder=" "
                         required
                         value={formData.CompanyCustomer}
@@ -187,9 +185,9 @@ const Budget = () => {
 
             <label htmlFor="MessageCustomer" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Tu Mensaje</label>
             <textarea
-                id="MessageCustomer" // Usa el nombre de la columna de Supabase como ID
+                id="MessageCustomer"
                 rows="4"
-                className="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 mb-6"
+                className={inputClasses + " mb-6"} // Aquí combinamos las clases y añadimos el margen inferior
                 placeholder="Mensaje..."
                 value={formData.MessageCustomer}
                 onChange={handleInputChange}
@@ -198,7 +196,7 @@ const Budget = () => {
             <div className="flex items-start mb-5">
                 <div className="flex items-center h-5">
                     <input
-                        id="termsAccepted" // Nuevo ID para el checkbox
+                        id="termsAccepted"
                         type="checkbox"
                         className="w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-blue-300 dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800"
                         required
@@ -220,7 +218,7 @@ const Budget = () => {
             <button
                 className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
                 type="submit"
-                disabled={!recaptchaVerified || loading} // Deshabilita si reCAPTCHA no está verificado o está cargando
+                disabled={!recaptchaVerified || loading}
             >
                 {loading ? "Enviando..." : "Enviar"}
             </button>
