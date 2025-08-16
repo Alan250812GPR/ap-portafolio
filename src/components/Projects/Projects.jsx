@@ -33,14 +33,14 @@ const cardsData = [
   {
     id: 5,
     title: "Geo- CX",
-    imageUrl: "https://thiagozambonini-portfolio-remojs.vercel.app/assets/geocx-icon-4b9c7a39.png",
+    imageUrl: "https://cdn.prod.website-files.com/67476344cf287349c7bb855a/6797d5b9126a5044074cf132_geocx_weblogo.png",
     url: "https://github.com/Alan250812GPR",
     desc: "Sistema de rastreo de personal junto con algunos modulos como lo es PTO,Incidencias Etc.",
   },
   {
     id: 6,
     title: "EOPS",
-    imageUrl: "https://media.licdn.com/dms/image/v2/D560BAQEY_-JbXJdipw/company-logo_200_200/company-logo_200_200/0/1713155438929/e_ops_logo?e=1734566400&v=beta&t=vAiqGZHMOpeoOkf0pcGSfiLGaXW7gO0t9zIGnwA5cL4",
+    imageUrl: "https://e-ops.com/images/eops_logo.png",
     url: "https://www.linkedin.com/company/e-ops/",
     desc: "Sistema de registro de horas web y aplicacion android para carga de horas trabajadas y incidencias",
   },
