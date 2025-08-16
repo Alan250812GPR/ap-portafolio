@@ -170,6 +170,20 @@ const cardsData = [
     url: "https://www.teopm.com/",
     desc: "Integracion con TEOPM principalmente hacia SmartSheet",
   },
+    {
+        id: 25,
+        title: "Saccyp",
+        imageUrl: "https://sacyp.mx/public/SACCYP.png",
+        url: "https://sacyp.mx/",
+        desc: "Herramientas internas para Oleofinos entre las que estan un reporteador basado en Power Bi",
+    },
+    {
+        id: 26,
+        title: "Sistemas de Tickets",
+        imageUrl: "https://sacyp.mx/public/SACCYP.png",
+        url: "https://helpdesk.sacyp.mx/",
+        desc: "Sistema de Tickets para temas de saccyp",
+    },
 ];
 
 const Card = ({ title, imageUrl, url, desc }) => {
