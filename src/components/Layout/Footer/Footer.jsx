@@ -27,7 +27,7 @@ const Footer = () => {
                     <li>
                         <Link
                             as="a"
-                            to="/Tecnologys"
+                            to="#/Tecnologys"
                             color="blue-gray"
                             className="font-normal transition-colors hover:text-blue-500 focus:text-blue-500"
                         >
@@ -37,7 +37,7 @@ const Footer = () => {
                     <li>
                         <Link
                             as="a"
-                            to="/Projects"
+                            to="#/Projects"
                             color="blue-gray"
                             className="font-normal transition-colors hover:text-blue-500 focus:text-blue-500"
                         >
@@ -47,7 +47,7 @@ const Footer = () => {
                     <li>
                         <Link
                             as="a"
-                            to="/Budget"
+                            to="#/Budget"
                             color="blue-gray"
                             className="font-normal transition-colors hover:text-blue-500 focus:text-blue-500"
                         >

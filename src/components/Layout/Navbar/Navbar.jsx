@@ -8,9 +8,9 @@ import devAlan from '../../../assets/DevAP.svg';
 
 const navigation = [
   { name: 'Inicio', href: '/', current: false },
-  { name: 'Tecnologias', href: '/Tecnologys', current: false },
-  { name: 'Proyectos', href: '/Projects', current: false },
-  { name: 'Cotizaciones', href: '/Budget', current: false },
+  { name: 'Tecnologias', href: '#/Tecnologys', current: false },
+  { name: 'Proyectos', href: '#/Projects', current: false },
+  { name: 'Cotizaciones', href: '#/Budget', current: false },
 ]
 
 function classNames(...classes) {
