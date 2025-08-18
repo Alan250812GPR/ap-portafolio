@@ -47,7 +47,7 @@ const Footer = () => {
                     <li>
                         <Link
                             as="a"
-                            to="#/Budget"
+                            to="/Budget"
                             color="blue-gray"
                             className="font-normal transition-colors hover:text-blue-500 focus:text-blue-500"
                         >
