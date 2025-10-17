@@ -1,0 +1,70 @@
+import React from 'react';
+import { useTranslation } from 'react-i18next';
+import { motion } from 'framer-motion';
+import { ArrowUpRight } from 'lucide-react';
+import GithubIcon from '/githubB.png';
+
+const projectsData = [
+    { id: 1, title: "Pinochueco", imageUrl: "https://pinochueco.com/assets/img/logo.png", url: "https://pinochueco.com/", desc: "Cabañas pinochueco" },
+    { id: 2, title: "Mazamitla Sierra Tours", imageUrl: "https://mazamitlasierratours.com/public/IMG/MzLogos/CompleteLogo-Green.png", url: "https://mazamitlasierratours.com", desc: "Plataforma de tours y reservaciones" },
+    { id: 4, title: "Sheva Ecommerce", imageUrl: "http://www.ssheva.com/images/logo.png", url: "https://www.linkedin.com/posts/alan-g-parra-robledo-617a4a138_desarrollo-developers-smartraccoon-activity-7169082216113782785-qNEr?utm_source=share&utm_medium=member_desktop", desc: "E-commerce con integración a ERP" },
+    { id: 5, title: "Geo-CX", imageUrl: "https://cdn.prod.website-files.com/67476344cf287349c7bb855a/6797d5b9126a5044074cf132_geocx_weblogo.png", url: "https://github.com/Alan250812GPR", desc: "Sistema de rastreo de personal y PTO" },
+    { id: 9, title: "Portafolio Personal", imageUrl: GithubIcon, url: "https://github.com/Alan250812GPR/ap-portafolio", desc: "Este mismo portafolio, hecho en React y TS" },
+    { id: 18, title: "Help Desk", imageUrl: GithubIcon, url: "https://github.com/Alan250812GPR/HelpDesk", desc: "Sistema de tickets open source" },
+    { id: 19, title: "SimpleStock", imageUrl: GithubIcon, url: "https://github.com/Alan250812GPR/SimpleStock", desc: "Sistema de inventarios open source" },
+    { id: 21, title: "Divemex Apps", imageUrl: "https://www.divemex.com/wp-content/uploads/2021/06/LOGOS-DVM-03-768x256.png", url: "https://www.divemex.com", desc: "Aplicaciones internas para sensores de clima" },
+];
+
+const ProjectCard: React.FC<typeof projectsData[0]> = ({ title, imageUrl, url, desc }) => {
+  const { t } = useTranslation();
+  return (
+    <motion.div
+      layout
+      initial={{ opacity: 0, scale: 0.8 }}
+      animate={{ opacity: 1, scale: 1 }}
+      exit={{ opacity: 0, scale: 0.8 }}
+      transition={{ duration: 0.3 }}
+      className="group relative flex flex-col overflow-hidden rounded-lg bg-dark-card shadow-lg"
+    >
+      <div className="flex h-40 items-center justify-center p-4 bg-white/5">
+        <img src={imageUrl} alt={title} className="max-h-full max-w-full object-contain" />
+      </div>
+      <div className="flex flex-1 flex-col p-4">
+        <h3 className="font-bold text-lg text-dark-text-primary">{title}</h3>
+        <p className="mt-2 text-sm text-dark-text-secondary flex-1">{desc}</p>
+        <a
+          href={url}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-accent-primary transition-colors hover:text-accent-hover self-start"
+        >
+          {t('projects.button')}
+          <ArrowUpRight className="h-4 w-4 transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" />
+        </a>
+      </div>
+    </motion.div>
+  );
+};
+
+const Projects: React.FC = () => {
+  const { t } = useTranslation();
+  return (
+    <div className="container mx-auto">
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 0.5 }}
+      >
+        <h1 className="text-3xl font-bold tracking-tight text-dark-text-primary sm:text-4xl">{t('projects.title')}</h1>
+        <p className="mt-4 text-lg text-dark-text-secondary">{t('projects.description')}</p>
+      </motion.div>
+      <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+        {projectsData.map((project) => (
+          <ProjectCard key={project.id} {...project} />
+        ))}
+      </div>
+    </div>
+  );
+};
+
+export default Projects;
