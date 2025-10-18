@@ -1,0 +1,59 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "experience": "Experiencia",
+    "projects": "Proyectos",
+    "contact": "Contacto"
+  },
+  "home": {
+    "greeting": "Hola, soy Alan Parra",
+    "title": "Desarrollador Backend & Arquitecto de Software",
+    "bio": "Con más de 9 años de experiencia, me especializo en la construcción de sistemas de software robustos, escalables y de alta disponibilidad. Mi enfoque principal es el backend, utilizando tecnologías como .NET y PHP para crear soluciones seguras y eficientes. Me apasiona el diseño de arquitecturas limpias, la optimización de bases de datos y la implementación de metodologías ágiles para entregar productos de calidad.",
+    "resume_es": "CV en Español",
+    "resume_en": "Resume en Inglés"
+  },
+  "experience": {
+    "title": "Tecnologías y Experiencia",
+    "description": "A lo largo de mi carrera, he trabajado con una amplia gama de herramientas y tecnologías que me permiten abordar proyectos complejos desde diferentes ángulos."
+  },
+  "projects": {
+    "title": "Proyectos Destacados",
+    "description": "Una selección de proyectos en los que he trabajado, demostrando mi capacidad para entregar soluciones en diversas industrias y plataformas.",
+    "button": "Ver más"
+  },
+  "contact": {
+    "title": "Hablemos de tu proyecto",
+    "description": "Si tienes una idea, necesitas una cotización, o simplemente quieres conversar sobre tecnología, no dudes en contactarme. Estoy disponible para todo tipo de proyectos: desarrollo Web, Móvil y de Escritorio, integraciones con E-commerce o ERP, extensiones para Magento y más.",
+    "form": {
+      "email": "Correo Electrónico",
+      "firstName": "Nombre",
+      "lastName": "Apellido",
+      "phone": "Celular (+52 123-456-7890)",
+      "company": "Compañía (Ej. SmartRaccoon)",
+      "message": "Tu Mensaje",
+      "message_placeholder": "Cuéntame sobre tu proyecto...",
+      "terms": "Acepto los",
+      "terms_link": "términos y condiciones",
+      "submit": "Enviar Mensaje",
+      "submitting": "Enviando...",
+      "go_back": "Regresar"
+    },
+    "errors": {
+      "terms": "Debes aceptar los términos y condiciones.",
+      "recaptcha": "Por favor, completa el reCAPTCHA.",
+      "submit": "Hubo un error al enviar tu mensaje. Inténtalo de nuevo."
+    },
+    "success": {
+      "title": "¡Mensaje Enviado!",
+      "text": "Gracias por contactarme. Te responderé a la brevedad."
+    }
+  },
+  "footer": {
+    "rights": "Alan Parra. Todos los derechos reservados."
+  },
+  "socials": {
+    "linkedin": "Ir a perfil de LinkedIn",
+    "github": "Ir a perfil de GitHub",
+    "whatsapp": "Enviar mensaje por WhatsApp"
+  }
+}
