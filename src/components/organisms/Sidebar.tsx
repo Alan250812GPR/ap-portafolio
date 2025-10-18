@@ -11,7 +11,7 @@ const navItems = [
   { to: '/', label: 'nav.home', icon: Home },
   { to: '/experience', label: 'nav.experience', icon: Briefcase },
   { to: '/projects', label: 'nav.projects', icon: Code },
-  { to: '/contact', label: 'nav.contact', icon: Mail },
+  //{ to: '/contact', label: 'nav.contact', icon: Mail },
 ];
 
 const Sidebar: React.FC = () => {

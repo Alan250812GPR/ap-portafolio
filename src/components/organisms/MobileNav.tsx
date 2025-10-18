@@ -13,7 +13,7 @@ const MobileNav: React.FC = () => {
     '/': 'nav.home',
     '/experience': 'nav.experience',
     '/projects': 'nav.projects',
-    '/contact': 'nav.contact',
+    //'/contact': 'nav.contact',
   };
 
   const currentPageTitle = t(pageTitles[location.pathname] || 'nav.home');
@@ -32,7 +32,7 @@ const navItems = [
   { to: '/', label: 'nav.home', icon: Home },
   { to: '/experience', label: 'nav.experience', icon: Briefcase },
   { to: '/projects', label: 'nav.projects', icon: Code },
-  { to: '/contact', label: 'nav.contact', icon: Mail },
+  //{ to: '/contact', label: 'nav.contact', icon: Mail },
 ];
 
 // Bottom mobile navigation bar

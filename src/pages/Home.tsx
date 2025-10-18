@@ -2,7 +2,7 @@ import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
 import { Download } from 'lucide-react';
-import AlanParraProfile from '/AlanParraProfile.jpg';
+import AlanParraProfile from '../assets/AlanParraProfile.jpg';
 
 const Home: React.FC = () => {
   const { t } = useTranslation();
