@@ -14,7 +14,7 @@ const socialLinks = [
     label: 'socials.github',
   },
   {
-    href: 'https://wa.me/523310113945',
+    href: 'https://wa.me/+523334589543',
     icon: MessageCircle,
     label: 'socials.whatsapp',
   },
