@@ -2,6 +2,7 @@ import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
 import { Download } from 'lucide-react';
+// @ts-ignore
 import AlanParraProfile from '../assets/AlanParraProfile.jpg';
 
 const Home: React.FC = () => {
@@ -11,8 +12,8 @@ const Home: React.FC = () => {
     window.open(url, '_blank');
   };
 
-  const resumeUrlSpanish = 'https://drive.google.com/file/d/1qgYUjJpyQIMToDvLbWkDA_ayEpk7libr/view?usp=sharing';
-  const resumeUrlEnglish = 'https://drive.google.com/file/d/1qgYUjJpyQIMToDvLbWkDA_ayEpk7libr/view?usp=sharing';
+  const resumeUrlSpanish = 'https://drive.google.com/file/d/1kVK-yUQ03j1VFGPZ51miNgnPfREsG01u/view?usp=sharing';
+  const resumeUrlEnglish = 'https://drive.google.com/file/d/1kVK-yUQ03j1VFGPZ51miNgnPfREsG01u/view?usp=sharing';
 
   return (
     <div className="container mx-auto flex h-full flex-col items-center justify-center text-center">
