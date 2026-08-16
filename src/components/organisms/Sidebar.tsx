@@ -1,7 +1,7 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import { Home, Briefcase, Code, Mail } from 'lucide-react';
+import { Home, Briefcase, Code, FileText } from 'lucide-react';
 import DevAPLogo from '/DevAP.svg';
 
 import LanguageSwitcher from '@/components/atoms/LanguageSwitcher';
@@ -11,7 +11,7 @@ const navItems = [
   { to: '/', label: 'nav.home', icon: Home },
   { to: '/experience', label: 'nav.experience', icon: Briefcase },
   { to: '/projects', label: 'nav.projects', icon: Code },
-  //{ to: '/contact', label: 'nav.contact', icon: Mail },
+  { to: '/resume', label: 'nav.resume', icon: FileText },
 ];
 
 const Sidebar: React.FC = () => {

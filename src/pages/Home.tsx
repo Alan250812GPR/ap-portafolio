@@ -1,19 +1,13 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
+import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { Download } from 'lucide-react';
-// @ts-ignore
+import { Download, FileText } from 'lucide-react';
 import AlanParraProfile from '../assets/AlanParraProfile.jpg';
+import resumePdf from '../assets/Alan Gilberto Parra Robledo.pdf';
 
 const Home: React.FC = () => {
   const { t } = useTranslation();
-
-  const openResume = (url: string) => {
-    window.open(url, '_blank');
-  };
-
-  const resumeUrlSpanish = 'https://drive.google.com/file/d/1kVK-yUQ03j1VFGPZ51miNgnPfREsG01u/view?usp=sharing';
-  const resumeUrlEnglish = 'https://drive.google.com/file/d/1kVK-yUQ03j1VFGPZ51miNgnPfREsG01u/view?usp=sharing';
 
   return (
     <div className="container mx-auto flex h-full flex-col items-center justify-center text-center">
@@ -59,20 +53,22 @@ const Home: React.FC = () => {
         transition={{ delay: 0.5, duration: 0.5 }}
         className="mt-8 flex flex-col sm:flex-row gap-4"
       >
-        <button
-          onClick={() => openResume(resumeUrlSpanish)}
+        <Link
+          to="/resume"
           className="flex items-center justify-center gap-2 rounded-md bg-accent-primary px-6 py-3 text-base font-semibold text-white shadow-sm transition-colors hover:bg-accent-hover"
         >
-          <Download className="h-5 w-5" />
-          {t('home.resume_es')}
-        </button>
-        <button
-          onClick={() => openResume(resumeUrlEnglish)}
+          <FileText className="h-5 w-5" />
+          {t('home.view_resume')}
+        </Link>
+        <a
+          href={resumePdf}
+          target="_blank"
+          rel="noopener noreferrer"
           className="flex items-center justify-center gap-2 rounded-md border border-dark-border bg-dark-card px-6 py-3 text-base font-semibold text-dark-text-primary shadow-sm transition-colors hover:bg-dark-border"
         >
           <Download className="h-5 w-5" />
-          {t('home.resume_en')}
-        </button>
+          {t('home.download_cv')}
+        </a>
       </motion.div>
     </div>
   );

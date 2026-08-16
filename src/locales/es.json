@@ -3,14 +3,14 @@
     "home": "Inicio",
     "experience": "Experiencia",
     "projects": "Proyectos",
-    "contact": "Contacto"
+    "resume": "Currículum"
   },
   "home": {
     "greeting": "Hola, soy Alan Parra",
-    "title": "Desarrollador Backend & Arquitecto de Software",
+    "title": "Arquitecto de Software & Desarrollador Full-Stack",
     "bio": "Con más de 9 años de experiencia, me especializo en la construcción de sistemas de software robustos, escalables y de alta disponibilidad. Mi enfoque principal es el backend, utilizando tecnologías como .NET y PHP para crear soluciones seguras y eficientes. Me apasiona el diseño de arquitecturas limpias, la optimización de bases de datos y la implementación de metodologías ágiles para entregar productos de calidad.",
-    "resume_es": "CV en Español",
-    "resume_en": "Resume en Inglés"
+    "view_resume": "Ver mi Currículum",
+    "download_cv": "Descargar CV (PDF)"
   },
   "experience": {
     "title": "Tecnologías y Experiencia",
@@ -21,31 +21,200 @@
     "description": "Una selección de proyectos en los que he trabajado, demostrando mi capacidad para entregar soluciones en diversas industrias y plataformas.",
     "button": "Ver más"
   },
-  "contact": {
-    "title": "Hablemos de tu proyecto",
-    "description": "Si tienes una idea, necesitas una cotización, o simplemente quieres conversar sobre tecnología, no dudes en contactarme. Estoy disponible para todo tipo de proyectos: desarrollo Web, Móvil y de Escritorio, integraciones con E-commerce o ERP, extensiones para Magento y más.",
-    "form": {
-      "email": "Correo Electrónico",
-      "firstName": "Nombre",
-      "lastName": "Apellido",
-      "phone": "Celular (+52 123-456-7890)",
-      "company": "Compañía (Ej. SmartRaccoon)",
-      "message": "Tu Mensaje",
-      "message_placeholder": "Cuéntame sobre tu proyecto...",
-      "terms": "Acepto los",
-      "terms_link": "términos y condiciones",
-      "submit": "Enviar Mensaje",
-      "submitting": "Enviando...",
-      "go_back": "Regresar"
+  "resume": {
+    "title": "Currículum",
+    "description": "Arquitecto de Software y Desarrollador Full-Stack con más de 9 años de experiencia entregando soluciones end-to-end para equipos y mercados internacionales.",
+    "download": "Descargar CV (PDF)",
+    "summary": {
+      "title": "Perfil",
+      "text": "Arquitecto de Software y Desarrollador Full-Stack con +9 años de experiencia en diseño de soluciones E2E, desarrollo de software y liderazgo técnico. Especialista en .NET/C#, JavaScript/TypeScript, APIs, microservicios, Clean Architecture y Azure, con experiencia en CI/CD, optimización de sistemas y entornos Agile. Certificado en TOGAF y Azure Solutions Architect Expert, con trayectoria liderando decisiones técnicas, mentoría de desarrolladores y desarrollo de soluciones escalables para equipos y mercados internacionales."
     },
-    "errors": {
-      "terms": "Debes aceptar los términos y condiciones.",
-      "recaptcha": "Por favor, completa el reCAPTCHA.",
-      "submit": "Hubo un error al enviar tu mensaje. Inténtalo de nuevo."
+    "experience": {
+      "title": "Experiencia",
+      "items": [
+        {
+          "role": "Arquitecto de Software y Full Stack Developer",
+          "company": "VOGUEX (Proyecto)",
+          "period": "12/2025 - Presente",
+          "location": "",
+          "bullets": [
+            "Supervisar el SDLC y las decisiones técnicas, asegurando soluciones escalables, calidad de código y entregas oportunas.",
+            "Liderar el desarrollo de Dafne, asistente profesional basado en IA integrado a la plataforma para fortalecer la interacción del usuario.",
+            "Diseñar soluciones multiplataforma con .NET MAUI y React Native, optimizando interfaces y comportamiento funcional.",
+            "Guiar a desarrolladores junior mediante revisiones de código y principios de Clean Architecture."
+          ]
+        },
+        {
+          "role": "Desarrollador Full-Stack",
+          "company": "NUTS (Agencia de Marketing)",
+          "period": "07/2025 - 12/2025",
+          "location": "Toronto, Ontario (Remoto)",
+          "bullets": [
+            "Liderar técnicamente la cuenta El Asturiano, alineando decisiones de desarrollo con objetivos comerciales para el mercado canadiense.",
+            "Desarrollar arquitecturas full-stack escalables, traduciendo requerimientos de negocio en soluciones técnicas.",
+            "Optimizar flujos de desarrollo Agile para agilizar entregas en un entorno de agencia de alta demanda."
+          ]
+        },
+        {
+          "role": "Desarrollador Web",
+          "company": "OLEOFINOS (Proyecto)",
+          "period": "09/2024 - 07/2025",
+          "location": "",
+          "bullets": [
+            "Desarrollar un CRM personalizado, reduciendo los costos de mantenimiento en 10%.",
+            "Diseñar modelos de datos y componentes de aplicación orientados a facilitar la mantenibilidad y evolución del CRM.",
+            "Aplicar prácticas de calidad de software para detectar defectos antes de su liberación a producción."
+          ]
+        },
+        {
+          "role": "Lead Software Developer",
+          "company": "TEOPM (Proyecto)",
+          "period": "03/2023 - 03/2024",
+          "location": "Phoenix, Arizona (Remoto)",
+          "bullets": [
+            "Diseñar y liderar la implementación técnica de Geo CX, asegurando escalabilidad y rendimiento del sistema.",
+            "Mentorizar desarrolladores junior en mejores prácticas de arquitectura, estándares de código y Clean Architecture.",
+            "Colaborar con equipos multidisciplinarios para resolver problemas técnicos complejos y fortalecer la estabilidad del sistema."
+          ]
+        },
+        {
+          "role": "Desarrollador Web Full-Stack",
+          "company": "FLEXIMATIC",
+          "period": "03/2022 - 03/2023",
+          "location": "",
+          "bullets": []
+        },
+        {
+          "role": "Desarrollador .NET",
+          "company": "RADIAL TIRES",
+          "period": "08/2021 - 03/2022",
+          "location": "",
+          "bullets": []
+        }
+      ]
     },
-    "success": {
-      "title": "¡Mensaje Enviado!",
-      "text": "Gracias por contactarme. Te responderé a la brevedad."
+    "projects": {
+      "title": "Proyectos",
+      "items": [
+        {
+          "name": "MacClipboard",
+          "period": "Presente",
+          "url": "",
+          "description": "Desarrollo de MacClipboardMonitor, una utilidad nativa para macOS que aprovecha Avalonia UI y SQLite para un rendimiento de escritorio optimizado."
+        },
+        {
+          "name": "Mazamitla Tours",
+          "period": "2023 - 2026",
+          "url": "https://mazamitlasierratours.com",
+          "description": "Desarrollo arquitectónico y full-stack de una plataforma E2E de ventas y administración, implementando soluciones que permitieron escalar las operaciones significativamente."
+        }
+      ]
+    },
+    "achievements": {
+      "title": "Logros",
+      "items": [
+        {
+          "company": "VOGUEX",
+          "text": "Diseñé la arquitectura E2E de la plataforma de e-commerce y CRM, soportando +300 usuarios activos diarios y un crecimiento de +5% en operaciones de manera semanal."
+        },
+        {
+          "company": "NUTS",
+          "text": "Recuperé 45% de la base de usuarios de la app y sitio web de El Asturiano mediante la corrección de errores críticos y la mejora de la experiencia del usuario."
+        },
+        {
+          "company": "OLEOFINOS",
+          "text": "Implementé pruebas automatizadas, alcanzando 20% de cobertura de código y reduciendo errores de producción en 30%."
+        }
+      ]
+    },
+    "tools": {
+      "title": "Herramientas",
+      "groups": [
+        {
+          "group": "Lenguajes y Plataformas",
+          "items": "C#, .NET 8/9, PHP, JavaScript, TypeScript, SQL, Java, WinDev, Bash"
+        },
+        {
+          "group": "Frameworks y Tecnologías",
+          "items": "Node.js, NestJS, Laravel, Magento, React, Angular, Analog, .NET MAUI, Avalonia UI, React Native, SQLite, TailwindCSS"
+        },
+        {
+          "group": "Cloud y DevOps",
+          "items": "Microsoft Azure, Docker, CI/CD"
+        },
+        {
+          "group": "Seguridad y Autenticación",
+          "items": "OAuth, SAML, LDAP, Kerberos"
+        }
+      ]
+    },
+    "skills": {
+      "title": "Habilidades",
+      "technical": "Técnicas",
+      "soft": "Interpersonales",
+      "technical_items": [
+        "Arquitectura de Software",
+        "Arquitectura de Microservicios",
+        "Clean Architecture",
+        "Arquitectura Hexagonal",
+        "Diseño y Desarrollo de APIs RESTful",
+        "Software Development Life Cycle (SDLC)",
+        "Diseño de Modelos de Datos",
+        "Integración Continua y Despliegue Continuo",
+        "Desarrollo Full-Stack",
+        "Desarrollo Multiplataforma",
+        "Pruebas Automatizadas",
+        "Calidad de Código",
+        "Optimización de Rendimiento",
+        "Diseño de Sistemas Escalables",
+        "Principios SOLID",
+        "Metodologías Agile",
+        "Seguridad de Aplicaciones",
+        "Mentoría Técnica",
+        "Revisión de Código",
+        "DevSecOps"
+      ],
+      "soft_items": [
+        "Liderazgo Técnico",
+        "Mentoría y Desarrollo de Talento",
+        "Resolución de Problemas Complejos",
+        "Pensamiento Analítico",
+        "Toma de Decisiones",
+        "Comunicación Técnica",
+        "Colaboración Multidisciplinaria",
+        "Gestión de Stakeholders",
+        "Adaptabilidad",
+        "Mejora Continua",
+        "Orientación a Calidad",
+        "Trabajo en Equipos Internacionales"
+      ]
+    },
+    "certifications": {
+      "title": "Certificaciones",
+      "items": [
+        { "name": "Certificaciones ISO 9001 e ISO 32000", "issuer": "", "year": "2025" },
+        { "name": ".NET Specialist", "issuer": "EDTEAM", "year": "2025" },
+        { "name": "TOGAF Enterprise Architecture Certification", "issuer": "The Open Group", "year": "2024" },
+        { "name": "Azure Solutions Architect Expert", "issuer": "Microsoft", "year": "2024" },
+        { "name": "CCNA (Cisco Certified Network Associate)", "issuer": "Cisco", "year": "2021" }
+      ]
+    },
+    "education": {
+      "title": "Educación",
+      "items": [
+        {
+          "degree": "Estudios en Tecnologías de la Información",
+          "school": "Universidad de Guadalajara",
+          "period": "2014 - 2018"
+        }
+      ]
+    },
+    "languages": {
+      "title": "Idiomas",
+      "items": [
+        { "name": "Inglés", "level": "B2" },
+        { "name": "Español", "level": "Nativo" }
+      ]
     }
   },
   "footer": {

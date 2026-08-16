@@ -3,14 +3,14 @@
     "home": "Home",
     "experience": "Experience",
     "projects": "Projects",
-    "contact": "Contact"
+    "resume": "Resume"
   },
   "home": {
     "greeting": "Hi, I'm Alan Parra",
-    "title": "Backend Developer & Software Architect",
+    "title": "Software Architect & Full-Stack Developer",
     "bio": "With over 9 years of experience, I specialize in building robust, scalable, and high-availability software systems. My primary focus is on the backend, using technologies like .NET and PHP to create secure and efficient solutions. I am passionate about clean architecture design, database optimization, and implementing agile methodologies to deliver quality products.",
-    "resume_es": "Resume in Spanish",
-    "resume_en": "Resume in English"
+    "view_resume": "View my Resume",
+    "download_cv": "Download CV (PDF)"
   },
   "experience": {
     "title": "Technologies & Experience",
@@ -21,31 +21,200 @@
     "description": "A selection of projects I've worked on, demonstrating my ability to deliver solutions across various industries and platforms.",
     "button": "View more"
   },
-  "contact": {
-    "title": "Let's talk about your project",
-    "description": "If you have an idea, need a quote, or just want to talk about technology, feel free to contact me. I am available for all types of projects: Web, Mobile, and Desktop development, E-commerce or ERP integrations, Magento extensions, and more.",
-    "form": {
-      "email": "Email Address",
-      "firstName": "First Name",
-      "lastName": "Last Name",
-      "phone": "Phone (+1 123-456-7890)",
-      "company": "Company (e.g., SmartRaccoon)",
-      "message": "Your Message",
-      "message_placeholder": "Tell me about your project...",
-      "terms": "I agree to the",
-      "terms_link": "terms and conditions",
-      "submit": "Send Message",
-      "submitting": "Sending...",
-      "go_back": "Go Back"
+  "resume": {
+    "title": "Resume",
+    "description": "Software Architect & Full-Stack Developer with 9+ years of experience delivering end-to-end solutions for international teams and markets.",
+    "download": "Download CV (PDF)",
+    "summary": {
+      "title": "Profile",
+      "text": "Software Architect and Full-Stack Developer with 9+ years of experience in end-to-end solution design, software development and technical leadership. Specialist in .NET/C#, JavaScript/TypeScript, APIs, microservices, Clean Architecture and Azure, with experience in CI/CD, system optimization and Agile environments. Certified in TOGAF and Azure Solutions Architect Expert, with a track record leading technical decisions, mentoring developers and building scalable solutions for international teams and markets."
     },
-    "errors": {
-      "terms": "You must accept the terms and conditions.",
-      "recaptcha": "Please complete the reCAPTCHA.",
-      "submit": "There was an error sending your message. Please try again."
+    "experience": {
+      "title": "Experience",
+      "items": [
+        {
+          "role": "Software Architect & Full Stack Developer",
+          "company": "VOGUEX (Project)",
+          "period": "12/2025 - Present",
+          "location": "",
+          "bullets": [
+            "Oversee the SDLC and technical decisions, ensuring scalable solutions, code quality and on-time delivery.",
+            "Lead the development of Dafne, an AI-based professional assistant integrated into the platform to enhance user interaction.",
+            "Design cross-platform solutions with .NET MAUI and React Native, optimizing interfaces and functional behavior.",
+            "Guide junior developers through code reviews and Clean Architecture principles."
+          ]
+        },
+        {
+          "role": "Full-Stack Developer",
+          "company": "NUTS (Marketing Agency)",
+          "period": "07/2025 - 12/2025",
+          "location": "Toronto, Ontario (Remote)",
+          "bullets": [
+            "Technically lead the El Asturiano account, aligning development decisions with business goals for the Canadian market.",
+            "Develop scalable full-stack architectures, translating business requirements into technical solutions.",
+            "Optimize Agile development flows to streamline delivery in a high-demand agency environment."
+          ]
+        },
+        {
+          "role": "Web Developer",
+          "company": "OLEOFINOS (Project)",
+          "period": "09/2024 - 07/2025",
+          "location": "",
+          "bullets": [
+            "Develop a custom CRM, reducing maintenance costs by 10%.",
+            "Design data models and application components focused on the maintainability and evolution of the CRM.",
+            "Apply software quality practices to detect defects before production release."
+          ]
+        },
+        {
+          "role": "Lead Software Developer",
+          "company": "TEOPM (Project)",
+          "period": "03/2023 - 03/2024",
+          "location": "Phoenix, Arizona (Remote)",
+          "bullets": [
+            "Design and lead the technical implementation of Geo CX, ensuring system scalability and performance.",
+            "Mentor junior developers in architecture best practices, code standards and Clean Architecture.",
+            "Collaborate with cross-functional teams to solve complex technical problems and strengthen system stability."
+          ]
+        },
+        {
+          "role": "Full-Stack Web Developer",
+          "company": "FLEXIMATIC",
+          "period": "03/2022 - 03/2023",
+          "location": "",
+          "bullets": []
+        },
+        {
+          "role": ".NET Developer",
+          "company": "RADIAL TIRES",
+          "period": "08/2021 - 03/2022",
+          "location": "",
+          "bullets": []
+        }
+      ]
     },
-    "success": {
-      "title": "Message Sent!",
-      "text": "Thank you for reaching out. I will get back to you shortly."
+    "projects": {
+      "title": "Projects",
+      "items": [
+        {
+          "name": "MacClipboard",
+          "period": "Present",
+          "url": "",
+          "description": "Development of MacClipboardMonitor, a native macOS utility leveraging Avalonia UI and SQLite for optimized desktop performance."
+        },
+        {
+          "name": "Mazamitla Tours",
+          "period": "2023 - 2026",
+          "url": "https://mazamitlasierratours.com",
+          "description": "Architectural and full-stack development of an end-to-end sales and administration platform, implementing solutions that enabled operations to scale significantly."
+        }
+      ]
+    },
+    "achievements": {
+      "title": "Achievements",
+      "items": [
+        {
+          "company": "VOGUEX",
+          "text": "Designed the end-to-end architecture of the e-commerce and CRM platform, supporting 300+ daily active users and weekly operation growth of 5%+."
+        },
+        {
+          "company": "NUTS",
+          "text": "Recovered 45% of El Asturiano's app and website user base by fixing critical bugs and improving user experience."
+        },
+        {
+          "company": "OLEOFINOS",
+          "text": "Implemented automated testing, reaching 20% code coverage and reducing production errors by 30%."
+        }
+      ]
+    },
+    "tools": {
+      "title": "Tools",
+      "groups": [
+        {
+          "group": "Languages & Platforms",
+          "items": "C#, .NET 8/9, PHP, JavaScript, TypeScript, SQL, Java, WinDev, Bash"
+        },
+        {
+          "group": "Frameworks & Technologies",
+          "items": "Node.js, NestJS, Laravel, Magento, React, Angular, Analog, .NET MAUI, Avalonia UI, React Native, SQLite, TailwindCSS"
+        },
+        {
+          "group": "Cloud & DevOps",
+          "items": "Microsoft Azure, Docker, CI/CD"
+        },
+        {
+          "group": "Security & Authentication",
+          "items": "OAuth, SAML, LDAP, Kerberos"
+        }
+      ]
+    },
+    "skills": {
+      "title": "Skills",
+      "technical": "Technical",
+      "soft": "Soft",
+      "technical_items": [
+        "Software Architecture",
+        "Microservices Architecture",
+        "Clean Architecture",
+        "Hexagonal Architecture",
+        "RESTful API Design & Development",
+        "Software Development Life Cycle (SDLC)",
+        "Data Modeling",
+        "Continuous Integration & Deployment",
+        "Full-Stack Development",
+        "Cross-Platform Development",
+        "Automated Testing",
+        "Code Quality",
+        "Performance Optimization",
+        "Scalable System Design",
+        "SOLID Principles",
+        "Agile Methodologies",
+        "Application Security",
+        "Technical Mentoring",
+        "Code Review",
+        "DevSecOps"
+      ],
+      "soft_items": [
+        "Technical Leadership",
+        "Mentoring & Talent Development",
+        "Complex Problem Solving",
+        "Analytical Thinking",
+        "Decision Making",
+        "Technical Communication",
+        "Cross-Functional Collaboration",
+        "Stakeholder Management",
+        "Adaptability",
+        "Continuous Improvement",
+        "Quality Orientation",
+        "International Teamwork"
+      ]
+    },
+    "certifications": {
+      "title": "Certifications",
+      "items": [
+        { "name": "ISO 9001 & ISO 32000 Certifications", "issuer": "", "year": "2025" },
+        { "name": ".NET Specialist", "issuer": "EDTEAM", "year": "2025" },
+        { "name": "TOGAF Enterprise Architecture Certification", "issuer": "The Open Group", "year": "2024" },
+        { "name": "Azure Solutions Architect Expert", "issuer": "Microsoft", "year": "2024" },
+        { "name": "CCNA (Cisco Certified Network Associate)", "issuer": "Cisco", "year": "2021" }
+      ]
+    },
+    "education": {
+      "title": "Education",
+      "items": [
+        {
+          "degree": "Information Technology Studies",
+          "school": "University of Guadalajara",
+          "period": "2014 - 2018"
+        }
+      ]
+    },
+    "languages": {
+      "title": "Languages",
+      "items": [
+        { "name": "English", "level": "B2" },
+        { "name": "Spanish", "level": "Native" }
+      ]
     }
   },
   "footer": {

@@ -1,4 +1,4 @@
-import React, { useState, useEffect, Suspense, lazy } from 'react';
+import React, { Suspense, lazy } from 'react';
 import { HashRouter as Router, Route, Routes, useLocation } from 'react-router-dom';
 import { AnimatePresence, motion } from 'framer-motion';
 import { LoaderCircle } from 'lucide-react';
@@ -10,7 +10,7 @@ import useScrollToTop from '@/hooks/useScrollToTop';
 const Home = lazy(() => import('@/pages/Home'));
 const Experience = lazy(() => import('@/pages/Experience'));
 const Projects = lazy(() => import('@/pages/Projects'));
-const Contact = lazy(() => import('@/pages/Contact'));
+const Resume = lazy(() => import('@/pages/Resume'));
 
 const LoadingSpinner: React.FC = () => (
   <div className="fixed inset-0 z-50 flex items-center justify-center bg-dark-bg/80 backdrop-blur-sm">
@@ -42,7 +42,7 @@ function PageLayout() {
             <Route path="/" element={<Home />} />
             <Route path="/experience" element={<Experience />} />
             <Route path="/projects" element={<Projects />} />
-            <Route path="/contact" element={<Contact />} />
+            <Route path="/resume" element={<Resume />} />
           </Routes>
         </Suspense>
       </motion.main>
