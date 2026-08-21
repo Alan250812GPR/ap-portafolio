@@ -9,11 +9,13 @@ const projectsData = [
     { id: 1, title: "Pinochueco", imageUrl: "https://pinochueco.com/assets/img/logo.png", url: "https://pinochueco.com/", desc: "Cabañas pinochueco" },
     { id: 2, title: "Mazamitla Sierra Tours", imageUrl: "https://mazamitlasierratours.com/public/IMG/MzLogos/CompleteLogo-Green.png", url: "https://mazamitlasierratours.com", desc: "Plataforma de tours y reservaciones" },
     { id: 4, title: "Sheva Ecommerce", imageUrl: "http://www.ssheva.com/images/logo.png", url: "https://www.linkedin.com/posts/alan-g-parra-robledo-617a4a138_desarrollo-developers-smartraccoon-activity-7169082216113782785-qNEr?utm_source=share&utm_medium=member_desktop", desc: "E-commerce con integración a ERP" },
-    { id: 5, title: "Geo-CX", imageUrl: "https://cdn.prod.website-files.com/67476344cf287349c7bb855a/6797d5b9126a5044074cf132_geocx_weblogo.png", url: "https://github.com/Alan250812GPR", desc: "Sistema de rastreo de personal y PTO" },
+    { id: 5, title: "Tiendas el asturiano", imageUrl: "https://cdn.shopify.com/s/files/1/0719/1183/3756/files/LOGO_ASTURIANO_2023-2_1.png?v=1770309561", url: "https://tiendaselasturiano.com/", desc: "Tiendas el asturiano participe en apps moviles y ecommerce" },
+    { id: 6, title: "Geo-CX", imageUrl: "https://cdn.prod.website-files.com/67476344cf287349c7bb855a/6797d5b9126a5044074cf132_geocx_weblogo.png", url: "https://github.com/Alan250812GPR", desc: "Sistema de rastreo de personal y PTO" },
     { id: 9, title: "Portafolio Personal", imageUrl: GithubIcon, url: "https://github.com/Alan250812GPR/ap-portafolio", desc: "Este mismo portafolio, hecho en React y TS" },
     { id: 18, title: "Help Desk", imageUrl: GithubIcon, url: "https://github.com/Alan250812GPR/HelpDesk", desc: "Sistema de tickets open source" },
     { id: 19, title: "SimpleStock", imageUrl: GithubIcon, url: "https://github.com/Alan250812GPR/SimpleStock", desc: "Sistema de inventarios open source" },
     { id: 21, title: "Divemex Apps", imageUrl: "https://www.divemex.com/wp-content/uploads/2021/06/LOGOS-DVM-03-768x256.png", url: "https://www.divemex.com", desc: "Aplicaciones internas para sensores de clima" },
+    { id: 22, title: "MacClipboard", imageUrl: GithubIcon, url: "https://github.com/Alan250812GPR/MacClipboardMonitorByAP", desc: "Proyecto Open Source para Mac" },
 ];
 
 const ProjectCard: React.FC<typeof projectsData[0]> = ({ title, imageUrl, url, desc }) => {
