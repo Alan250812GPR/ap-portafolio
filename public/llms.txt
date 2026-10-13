@@ -1,0 +1,38 @@
+# Alan Parra
+
+> Software Architect & Full-Stack Developer with 9+ years of experience delivering end-to-end solutions for international teams and markets. Certified in TOGAF and Azure Solutions Architect Expert.
+
+## About
+- **Name:** Alan Parra (Alan Gilberto Parra Robledo)
+- **Role:** Software Architect & Full-Stack Developer
+- **Location:** Remote (Mexico, CST timezone) — open to opportunities across Europe and North America
+- **Experience:** 9+ years
+
+## Core Skills
+- Backend: .NET / C#, PHP (Laravel, Symfony), Node.js / NestJS
+- Frontend: React, Angular, React Native, TypeScript
+- Cloud & DevOps: Microsoft Azure, Docker, CI/CD
+- Architecture: Clean Architecture, Hexagonal Architecture, Microservices, RESTful APIs
+- Security: OAuth, SAML, LDAP, Kerberos, DevSecOps
+
+## Notable Projects
+- Mazamitla Sierra Tours — tours and booking platform (https://mazamitlasierratours.com)
+- Voguex — wedding marketplace (https://voguex.com)
+- Tiendas El Asturiano — mobile apps & e-commerce (https://tiendaselasturiano.com)
+
+## Services
+- Software architecture consulting
+- Full-stack development
+- API & microservices design
+- System modernization & performance optimization
+
+## Contact
+- LinkedIn: https://www.linkedin.com/in/alan-g-parra-robledo-617a4a138/
+- GitHub: https://github.com/Alan250812GPR
+- WhatsApp: https://wa.me/+523334589543
+
+## Links
+- Home: https://ap-portafolio.vercel.app/
+- Experience: https://ap-portafolio.vercel.app/experience
+- Projects: https://ap-portafolio.vercel.app/projects
+- Resume: https://ap-portafolio.vercel.app/resume

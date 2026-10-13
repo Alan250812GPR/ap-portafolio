@@ -1,0 +1,66 @@
+# Alan Parra — Full Profile
+
+> Software Architect & Full-Stack Developer with 9+ years of experience delivering end-to-end solutions for international teams and markets. Certified in TOGAF and Azure Solutions Architect Expert.
+
+## About
+
+Alan Parra is a Software Architect and Full-Stack Developer specializing in backend systems built with .NET/C# and PHP. He designs robust, scalable and high-availability software, focusing on clean architecture, database optimization and Agile delivery.
+
+- **Name:** Alan Parra (Alan Gilberto Parra Robledo)
+- **Role:** Software Architect & Full-Stack Developer
+- **Location:** Remote (Mexico, CST timezone) — open to opportunities across Europe and North America
+- **Experience:** 9+ years
+- **Languages:** Spanish (native), English (B2)
+
+## Core Skills
+
+### Backend
+.NET / C#, PHP, Laravel, Symfony, Node.js / NestJS
+
+### Frontend
+React, Angular, React Native, .NET MAUI, Avalonia UI, TypeScript, JavaScript, TailwindCSS
+
+### Cloud & DevOps
+Microsoft Azure, Docker, CI/CD
+
+### Architecture
+Clean Architecture, Hexagonal Architecture, Microservices, RESTful API design, Scalable System Design, Data Modeling, SOLID Principles
+
+### Security
+OAuth, SAML, LDAP, Kerberos, DevSecOps, Application Security
+
+### Other
+SDLC, Automated Testing, Code Quality, Performance Optimization, Agile Methodologies, Technical Mentoring, Code Review
+
+## Certifications
+- ISO 9001 & ISO 32000 Certifications (2025)
+- .NET Specialist — EDTEAM (2025)
+- TOGAF Enterprise Architecture Certification — The Open Group (2024)
+- Azure Solutions Architect Expert — Microsoft (2024)
+- CCNA (Cisco Certified Network Associate) — Cisco (2021)
+
+## Notable Projects
+- **Mazamitla Sierra Tours** — tours and booking platform (https://mazamitlasierratours.com)
+- **Voguex** — wedding marketplace (https://voguex.com)
+- **Tiendas El Asturiano** — mobile apps & e-commerce (https://tiendaselasturiano.com)
+- **MacClipboard** — open source macOS utility (https://github.com/Alan250812GPR/MacClipboardMonitorByAP)
+- **Help Desk** — open source ticketing system (https://github.com/Alan250812GPR/HelpDesk)
+- **SimpleStock** — open source inventory system (https://github.com/Alan250812GPR/SimpleStock)
+
+## Services
+- Software architecture consulting
+- Full-stack development
+- API & microservices design
+- System modernization & performance optimization
+- Technical leadership & team mentoring
+
+## Contact
+- LinkedIn: https://www.linkedin.com/in/alan-g-parra-robledo-617a4a138/
+- GitHub: https://github.com/Alan250812GPR
+- WhatsApp: https://wa.me/+523334589543
+
+## Links
+- Home: https://ap-portafolio.vercel.app/
+- Experience: https://ap-portafolio.vercel.app/experience
+- Projects: https://ap-portafolio.vercel.app/projects
+- Resume: https://ap-portafolio.vercel.app/resume

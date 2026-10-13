@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
 import { ArrowUpRight } from 'lucide-react';
+import Seo from '@/components/atoms/Seo';
 // @ts-ignore
 import GithubIcon from '/githubB.png';
 
@@ -73,6 +74,7 @@ const Projects: React.FC = () => {
     const { t } = useTranslation();
     return (
         <div className="container mx-auto">
+            <Seo title={t('seo.projects.title')} description={t('seo.projects.description')} path="/projects" />
             <motion.div
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}

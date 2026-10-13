@@ -13,6 +13,7 @@ import {
   TrendingUp,
   Calendar,
 } from 'lucide-react';
+import Seo from '@/components/atoms/Seo';
 import resumePdf from '../assets/Alan Gilberto Parra Robledo.pdf';
 
 type ExperienceItem = {
@@ -61,6 +62,7 @@ const Resume: React.FC = () => {
 
   return (
     <div className="container mx-auto max-w-4xl">
+      <Seo title={t('seo.resume.title')} description={t('seo.resume.description')} path="/resume" />
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}

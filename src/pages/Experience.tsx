@@ -1,6 +1,7 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
+import Seo from '@/components/atoms/Seo';
 
 const technologies = [
   { name: ".NET", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dotnetcore/dotnetcore-original.svg" },
@@ -26,6 +27,7 @@ const Experience: React.FC = () => {
 
   return (
     <div className="container mx-auto">
+      <Seo title={t('seo.experience.title')} description={t('seo.experience.description')} path="/experience" />
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}

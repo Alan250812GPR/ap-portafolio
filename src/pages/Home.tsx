@@ -3,6 +3,7 @@ import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { Download, FileText } from 'lucide-react';
+import Seo from '@/components/atoms/Seo';
 import AlanParraProfile from '../assets/AlanParraProfile.jpg';
 import resumePdf from '../assets/Alan Gilberto Parra Robledo.pdf';
 
@@ -11,6 +12,7 @@ const Home: React.FC = () => {
 
   return (
     <div className="container mx-auto flex h-full flex-col items-center justify-center text-center">
+      <Seo title={t('seo.home.title')} description={t('seo.home.description')} path="/" />
       <motion.div
         initial={{ scale: 0.5, opacity: 0 }}
         animate={{ scale: 1, opacity: 1 }}

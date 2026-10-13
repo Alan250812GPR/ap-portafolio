@@ -1,10 +1,11 @@
 import React, { Suspense, lazy } from 'react';
-import { HashRouter as Router, Route, Routes, useLocation } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes, useLocation } from 'react-router-dom';
 import { AnimatePresence, motion } from 'framer-motion';
 import { LoaderCircle } from 'lucide-react';
 
 import Sidebar from '@/components/organisms/Sidebar';
 import MobileNav, { MobileBottomNav } from '@/components/organisms/MobileNav';
+import CallToAction from '@/components/molecules/CallToAction';
 import useScrollToTop from '@/hooks/useScrollToTop';
 
 const Home = lazy(() => import('@/pages/Home'));
@@ -45,6 +46,7 @@ function PageLayout() {
             <Route path="/resume" element={<Resume />} />
           </Routes>
         </Suspense>
+        <CallToAction />
       </motion.main>
     </AnimatePresence>
   );

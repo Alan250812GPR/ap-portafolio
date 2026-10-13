@@ -224,5 +224,28 @@
     "linkedin": "Ir a perfil de LinkedIn",
     "github": "Ir a perfil de GitHub",
     "whatsapp": "Enviar mensaje por WhatsApp"
+  },
+  "cta": {
+    "title": "¿Necesitas que desarrolle tu proyecto?",
+    "subtitle": "Agenda una llamada conmigo y hablemos de cómo puedo ayudarte a llevar tu idea a producción con una arquitectura robusta y escalable.",
+    "button": "Agenda una llamada conmigo"
+  },
+  "seo": {
+    "home": {
+      "title": "Arquitecto de Software & Desarrollador Full-Stack",
+      "description": "Arquitecto de Software y Desarrollador Full-Stack con +9 años de experiencia en .NET, C#, Azure, APIs y microservicios. Abierto a oportunidades en Europa."
+    },
+    "experience": {
+      "title": "Tecnologías y Experiencia",
+      "description": "Stack tecnológico de Alan Parra: .NET, C#, PHP, Laravel, React, Angular, Azure, Docker, RabbitMQ y más. Más de 9 años construyendo software robusto."
+    },
+    "projects": {
+      "title": "Proyectos Destacados",
+      "description": "Proyectos destacados de Alan Parra: e-commerce, marketplaces, CRMs y herramientas open source desarrolladas con .NET, React y React Native."
+    },
+    "resume": {
+      "title": "Currículum",
+      "description": "Currículum de Alan Parra: Arquitecto de Software certificado en TOGAF y Azure Solutions Architect Expert, con +9 años de experiencia full-stack."
+    }
   }
 }
