@@ -11,6 +11,7 @@ const technologies = [
     { name: "PHP", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" },
     { name: "Laravel", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-original.svg" },
     { name: "Symfony", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/symfony/symfony-original.svg" },
+    { name: "JetBrains IDE'S", icon: "https://cdn.jsdelivr.net/gh/glincker/thesvg@main/public/icons/jetbrains/default.svg" },
 
     // Frontend & Meta-frameworks
     { name: "React", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" },
@@ -44,7 +45,7 @@ const technologies = [
     // Observabilidad & CI/CD
     { name: "Datadog", icon: "https://cdn.simpleicons.org/datadog/632CA6" },
     { name: "PostHog", icon: "https://cdn.simpleicons.org/posthog/F54E00" },
-    { name: "TeamCity", icon: "https://cdn.simpleicons.org/teamcity/000000" },
+    { name: "TeamCity JetBrains", icon: "https://cdn.simpleicons.org/teamcity/000000" },
     { name: "Azure DevOps", icon: "https://cdn.simpleicons.org/azuredevops/0078D7" },
     { name: "GitHub Actions", icon: "https://cdn.simpleicons.org/githubactions/2088FF" },
     { name: "Git", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" },
