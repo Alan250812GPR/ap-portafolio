@@ -56,7 +56,9 @@ const technologies = [
     { name: "Gemini", icon: "https://cdn.simpleicons.org/googlegemini/8E75B2" },
     { name: "Claude", icon: "https://cdn.simpleicons.org/anthropic/191919" },
     { name: "DeepSeek", icon: "https://ui-avatars.com/api/?name=Deep+Seek&background=4D6BFE&color=fff&font-size=0.4" },
-    { name: "Kimi", icon: "https://ui-avatars.com/api/?name=Kimi&background=0D0D0D&color=fff&font-size=0.4" }
+    { name: "Kimi", icon: "https://ui-avatars.com/api/?name=Kimi&background=0D0D0D&color=fff&font-size=0.4" },
+    { name: "OpenCode", icon: "https://cdn.jsdelivr.net/gh/glincker/thesvg@main/public/icons/opencode/default.svg"},
+    { name: "Cursor", icon: "https://cdn.jsdelivr.net/gh/simple-icons/simple-icons@main/icons/cursor.svg"}
 ];
 
 const Experience: React.FC = () => {
