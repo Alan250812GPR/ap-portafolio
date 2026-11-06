@@ -10,16 +10,66 @@
     "title": "Arquitecto de Software & Desarrollador Full-Stack",
     "bio": "Con más de 9 años de experiencia, me especializo en la construcción de sistemas de software robustos, escalables y de alta disponibilidad. Mi enfoque principal es el backend, utilizando tecnologías como .NET y PHP para crear soluciones seguras y eficientes. Me apasiona el diseño de arquitecturas limpias, la optimización de bases de datos y la implementación de metodologías ágiles para entregar productos de calidad.",
     "view_resume": "Ver mi Currículum",
-    "download_cv": "Descargar CV (PDF)"
+    "download_cv": "Descargar CV (PDF)",
+    "view_projects": "Ver proyectos",
+    "chips": {
+      "years": "9+ años",
+      "stack": ".NET / Azure",
+      "cert": "TOGAF"
+    }
   },
   "experience": {
     "title": "Tecnologías y Experiencia",
-    "description": "A lo largo de mi carrera, he trabajado con una amplia gama de herramientas y tecnologías que me permiten abordar proyectos complejos desde diferentes ángulos."
+    "description": "A lo largo de mi carrera, he trabajado con una amplia gama de herramientas y tecnologías que me permiten abordar proyectos complejos desde diferentes ángulos.",
+    "groups": {
+      "backend": "Backend",
+      "frontend": "Frontend",
+      "desktop": "Multiplataforma",
+      "ecommerce": "E-commerce",
+      "data": "Bases de datos",
+      "infra": "Infraestructura",
+      "devops": "Observabilidad y CI/CD",
+      "ai": "Inteligencia artificial"
+    }
   },
   "projects": {
     "title": "Proyectos Destacados",
     "description": "Una selección de proyectos en los que he trabajado, demostrando mi capacidad para entregar soluciones en diversas industrias y plataformas.",
-    "button": "Ver más"
+    "button": "Ver más",
+    "items": {
+      "mazamitla": {
+        "title": "Mazamitla Sierra Tours",
+        "desc": "Plataforma de tours y reservaciones"
+      },
+      "voguex": {
+        "title": "Voguex",
+        "desc": "Marketplace de bodas"
+      },
+      "asturiano": {
+        "title": "Tiendas El Asturiano",
+        "desc": "Apps móviles y ecommerce"
+      },
+      "macclipboard": {
+        "title": "MacClipboard",
+        "desc": "Proyecto open source para Mac"
+      },
+      "portfolio": {
+        "title": "Portafolio personal",
+        "desc": "Este portafolio, hecho con React y TypeScript"
+      },
+      "helpdesk": {
+        "title": "Help Desk",
+        "desc": "Sistema de tickets open source"
+      },
+      "pinochueco": {
+        "title": "Pinochueco",
+        "desc": "Sitio de las cabañas Pinochueco"
+      },
+      "simplestock": {
+        "title": "SimpleStock",
+        "desc": "Sistema de inventarios open source"
+      }
+    }
   },
   "resume": {
     "title": "Currículum",

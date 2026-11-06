@@ -1,6 +1,6 @@
 import React, { Suspense, lazy } from 'react';
 import { BrowserRouter as Router, Route, Routes, useLocation } from 'react-router-dom';
-import { AnimatePresence, motion } from 'framer-motion';
+import { AnimatePresence, MotionConfig, motion } from 'framer-motion';
 import { LoaderCircle } from 'lucide-react';
 
 import Sidebar from '@/components/organisms/Sidebar';
@@ -32,11 +32,11 @@ function PageLayout() {
     <AnimatePresence mode="wait">
       <motion.main
         key={location.pathname}
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        exit={{ opacity: 0, y: -20 }}
-        transition={{ duration: 0.3 }}
-        className="flex flex-1 flex-col gap-4 p-4 md:gap-8 md:p-6"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        exit={{ opacity: 0 }}
+        transition={{ duration: 0.2 }}
+        className="flex min-w-0 flex-1 flex-col gap-4 p-4 md:gap-8 md:p-6"
       >
         <Suspense fallback={<LoadingSpinner />}>
           <Routes location={location}>
@@ -54,10 +54,11 @@ function PageLayout() {
 
 function App() {
   return (
+    <MotionConfig reducedMotion="user">
     <Router>
-      <div className="grid min-h-screen w-full md:grid-cols-[280px_1fr]">
+      <div className="grid min-h-screen w-full md:grid-cols-[280px_minmax(0,1fr)]">
         <Sidebar />
-        <div className="flex flex-col">
+        <div className="flex min-w-0 flex-col">
           <MobileNav />
           <PageLayout />
           <div className="h-16 md:hidden" /> {/* Spacer for bottom nav */}
@@ -65,6 +66,7 @@ function App() {
         <MobileBottomNav />
       </div>
     </Router>
+    </MotionConfig>
   );
 }
 

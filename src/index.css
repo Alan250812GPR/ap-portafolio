@@ -3,7 +3,33 @@
 @tailwind utilities;
 
 @layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
   body {
     @apply bg-dark-bg text-dark-text-primary antialiased;
   }
+
+  :focus-visible {
+    outline: 2px solid #ffc61a;
+    outline-offset: 3px;
+  }
 }
+
+@layer components {
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 rounded-md bg-accent-primary px-6 py-3 text-base font-semibold text-accent-foreground shadow-sm transition-all hover:bg-accent-hover motion-safe:hover:-translate-y-0.5 motion-safe:hover:shadow-lg;
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center justify-center gap-2 rounded-md border border-dark-border bg-dark-card px-6 py-3 text-base font-semibold text-dark-text-primary shadow-sm transition-all hover:bg-dark-border motion-safe:hover:-translate-y-0.5 motion-safe:hover:shadow-lg;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+

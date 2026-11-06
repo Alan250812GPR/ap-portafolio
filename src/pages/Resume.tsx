@@ -14,6 +14,7 @@ import {
   Calendar,
 } from 'lucide-react';
 import Seo from '@/components/atoms/Seo';
+import { fadeUp, viewport } from '@/motion';
 import resumePdf from '../assets/Alan Gilberto Parra Robledo.pdf';
 
 type ExperienceItem = {
@@ -34,6 +35,27 @@ type ToolGroup = { group: string; items: string };
 type CertItem = { name: string; issuer: string; year: string };
 type EducationItem = { degree: string; school: string; period: string };
 type LanguageItem = { name: string; level: string };
+
+const sections = [
+  { id: 'perfil', label: 'resume.summary.title' },
+  { id: 'experiencia', label: 'resume.experience.title' },
+  { id: 'proyectos', label: 'resume.projects.title' },
+  { id: 'logros', label: 'resume.achievements.title' },
+  { id: 'herramientas', label: 'resume.tools.title' },
+  { id: 'habilidades', label: 'resume.skills.title' },
+  { id: 'certificaciones', label: 'resume.certifications.title' },
+  { id: 'formacion', label: 'resume.education.title' },
+  { id: 'idiomas', label: 'resume.languages.title' },
+] as const;
+
+const revealProps = {
+  variants: fadeUp,
+  initial: 'hidden' as const,
+  whileInView: 'show' as const,
+  viewport,
+};
+
+const sectionClass = 'scroll-mt-32 md:scroll-mt-20';
 
 const SectionTitle: React.FC<{ icon: React.ElementType; children: React.ReactNode }> = ({
   icon: Icon,
@@ -61,15 +83,10 @@ const Resume: React.FC = () => {
   const languages = t('resume.languages.items', { returnObjects: true }) as unknown as LanguageItem[];
 
   return (
-    <div className="container mx-auto max-w-4xl">
+    <div className="container mx-auto min-w-0 max-w-4xl">
       <Seo title={t('seo.resume.title')} description={t('seo.resume.description')} path="/resume" />
-      <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5 }}
-        className="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between"
-      >
-        <div>
+      <div className="flex flex-col gap-4 sm:flex-row sm:flex-wrap sm:items-end sm:justify-between">
+        <div className="min-w-0">
           <h1 className="text-3xl font-bold tracking-tight text-dark-text-primary sm:text-4xl">{t('resume.title')}</h1>
           <p className="mt-4 text-lg text-dark-text-secondary">{t('resume.description')}</p>
         </div>
@@ -77,39 +94,43 @@ const Resume: React.FC = () => {
           href={resumePdf}
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-flex shrink-0 items-center justify-center gap-2 rounded-md bg-accent-primary px-5 py-2.5 text-sm font-semibold text-white shadow-sm transition-colors hover:bg-accent-hover"
+          className="btn-primary shrink-0"
         >
           <Download className="h-4 w-4" />
           {t('resume.download')}
         </a>
-      </motion.div>
+      </div>
+
+      <nav aria-label={t('resume.title')} className="sticky top-16 z-10 -mx-4 mt-6 flex w-full min-w-0 gap-2 overflow-x-auto bg-dark-bg/95 px-4 py-3 backdrop-blur-sm md:top-0 md:mx-0 md:rounded-lg md:px-0">
+        {sections.map((section) => (
+          <a
+            key={section.id}
+            href={`#${section.id}`}
+            className="shrink-0 rounded-full bg-dark-card px-3 py-1 text-sm font-medium text-dark-text-secondary ring-1 ring-dark-border transition-colors hover:text-accent-primary"
+          >
+            {t(section.label)}
+          </a>
+        ))}
+      </nav>
 
       <div className="mt-12 space-y-12">
         {/* Profile */}
-        <motion.section
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.1, duration: 0.5 }}
-        >
+        <motion.section id="perfil" className={sectionClass} {...revealProps}>
           <SectionTitle icon={Sparkles}>{t('resume.summary.title')}</SectionTitle>
           <p className="mt-4 text-base leading-relaxed text-dark-text-secondary">{t('resume.summary.text')}</p>
         </motion.section>
 
         {/* Experience */}
-        <motion.section
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.15, duration: 0.5 }}
-        >
+        <motion.section id="experiencia" className={sectionClass} {...revealProps}>
           <SectionTitle icon={Briefcase}>{t('resume.experience.title')}</SectionTitle>
           <div className="mt-6 space-y-6 border-l border-dark-border pl-6">
             {experience.map((item, index) => (
               <div key={index} className="relative">
                 <span className="absolute -left-[31px] top-1.5 h-3 w-3 rounded-full bg-accent-primary ring-4 ring-dark-bg" />
                 <div className="flex flex-col gap-1">
-                  <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between">
-                    <h3 className="text-lg font-semibold text-dark-text-primary">{item.role}</h3>
-                    <span className="flex items-center gap-1 text-sm text-dark-text-secondary">
+                  <div className="flex flex-col gap-1 sm:flex-row sm:flex-wrap sm:items-center sm:justify-between">
+                    <h3 className="min-w-0 text-lg font-semibold text-dark-text-primary">{item.role}</h3>
+                    <span className="flex shrink-0 items-center gap-1 text-sm text-dark-text-secondary">
                       <Calendar className="h-3.5 w-3.5" />
                       {item.period}
                     </span>
@@ -135,17 +156,13 @@ const Resume: React.FC = () => {
         </motion.section>
 
         {/* Projects */}
-        <motion.section
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.2, duration: 0.5 }}
-        >
+        <motion.section id="proyectos" className={sectionClass} {...revealProps}>
           <SectionTitle icon={FileText}>{t('resume.projects.title')}</SectionTitle>
           <div className="mt-6 grid grid-cols-1 gap-4 sm:grid-cols-2">
             {projects.map((project, index) => (
               <div key={index} className="rounded-lg bg-dark-card p-5">
-                <div className="flex items-center justify-between">
-                  <h3 className="text-lg font-semibold text-dark-text-primary">{project.name}</h3>
+                <div className="flex flex-wrap items-center justify-between gap-2">
+                  <h3 className="min-w-0 text-lg font-semibold text-dark-text-primary">{project.name}</h3>
                   <span className="text-sm text-dark-text-secondary">{project.period}</span>
                 </div>
                 <p className="mt-3 text-sm leading-relaxed text-dark-text-secondary">{project.description}</p>
@@ -154,7 +171,7 @@ const Resume: React.FC = () => {
                     href={project.url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="mt-3 inline-block text-sm font-semibold text-accent-primary hover:text-accent-hover"
+                    className="mt-3 inline-block max-w-full break-all text-sm font-semibold text-accent-primary hover:text-accent-hover"
                   >
                     {project.url.replace(/^https?:\/\//, '')}
                   </a>
@@ -165,11 +182,7 @@ const Resume: React.FC = () => {
         </motion.section>
 
         {/* Achievements */}
-        <motion.section
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.25, duration: 0.5 }}
-        >
+        <motion.section id="logros" className={sectionClass} {...revealProps}>
           <SectionTitle icon={TrendingUp}>{t('resume.achievements.title')}</SectionTitle>
           <div className="mt-6 space-y-4">
             {achievements.map((achievement, index) => (
@@ -177,7 +190,7 @@ const Resume: React.FC = () => {
                 <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-accent-primary/10 text-sm font-bold text-accent-primary">
                   {achievement.company.charAt(0)}
                 </span>
-                <div>
+                <div className="min-w-0">
                   <h3 className="font-semibold text-dark-text-primary">{achievement.company}</h3>
                   <p className="mt-1 text-sm leading-relaxed text-dark-text-secondary">{achievement.text}</p>
                 </div>
@@ -187,11 +200,7 @@ const Resume: React.FC = () => {
         </motion.section>
 
         {/* Tools */}
-        <motion.section
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.3, duration: 0.5 }}
-        >
+        <motion.section id="herramientas" className={sectionClass} {...revealProps}>
           <SectionTitle icon={Wrench}>{t('resume.tools.title')}</SectionTitle>
           <div className="mt-6 grid grid-cols-1 gap-4 sm:grid-cols-2">
             {toolGroups.map((tool, index) => (
@@ -204,11 +213,7 @@ const Resume: React.FC = () => {
         </motion.section>
 
         {/* Skills */}
-        <motion.section
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.35, duration: 0.5 }}
-        >
+        <motion.section id="habilidades" className={sectionClass} {...revealProps}>
           <SectionTitle icon={Award}>{t('resume.skills.title')}</SectionTitle>
           <div className="mt-6 space-y-6">
             <div>
@@ -241,16 +246,12 @@ const Resume: React.FC = () => {
         </motion.section>
 
         {/* Certifications */}
-        <motion.section
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.4, duration: 0.5 }}
-        >
+        <motion.section id="certificaciones" className={sectionClass} {...revealProps}>
           <SectionTitle icon={Award}>{t('resume.certifications.title')}</SectionTitle>
           <div className="mt-6 space-y-3">
             {certifications.map((cert, index) => (
-              <div key={index} className="flex items-center justify-between rounded-lg bg-dark-card p-4">
-                <div>
+              <div key={index} className="flex flex-wrap items-center justify-between gap-3 rounded-lg bg-dark-card p-4">
+                <div className="min-w-0">
                   <h3 className="font-semibold text-dark-text-primary">{cert.name}</h3>
                   {cert.issuer && <p className="text-sm text-dark-text-secondary">{cert.issuer}</p>}
                 </div>
@@ -264,11 +265,7 @@ const Resume: React.FC = () => {
 
         {/* Education & Languages */}
         <div className="grid grid-cols-1 gap-12 sm:grid-cols-2">
-          <motion.section
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.45, duration: 0.5 }}
-          >
+          <motion.section id="formacion" className={sectionClass} {...revealProps}>
             <SectionTitle icon={GraduationCap}>{t('resume.education.title')}</SectionTitle>
             <div className="mt-6 space-y-3">
               {education.map((item, index) => (
@@ -281,11 +278,7 @@ const Resume: React.FC = () => {
             </div>
           </motion.section>
 
-          <motion.section
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.5, duration: 0.5 }}
-          >
+          <motion.section id="idiomas" className={sectionClass} {...revealProps}>
             <SectionTitle icon={LanguagesIcon}>{t('resume.languages.title')}</SectionTitle>
             <div className="mt-6 space-y-3">
               {languages.map((lang, index) => (

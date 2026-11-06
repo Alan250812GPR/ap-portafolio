@@ -1,6 +1,7 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
+import { motion } from 'framer-motion';
 import { Home, Briefcase, Code, FileText } from 'lucide-react';
 import DevAPLogo from '/DevAP.svg';
 
@@ -18,7 +19,7 @@ const Sidebar: React.FC = () => {
   const { t } = useTranslation();
 
   return (
-    <aside className="hidden border-r border-dark-border bg-dark-bg md:block">
+    <aside className="sticky top-0 hidden h-screen border-r border-dark-border bg-dark-bg md:block">
       <div className="flex h-full max-h-screen flex-col gap-2">
         <div className="flex h-16 items-center border-b border-dark-border px-6">
           <NavLink to="/" className="flex items-center gap-2 font-semibold">
@@ -33,21 +34,30 @@ const Sidebar: React.FC = () => {
                 key={to}
                 to={to}
                 className={({ isActive }) =>
-                  `flex items-center gap-3 rounded-lg px-3 py-2 transition-all hover:text-dark-text-primary ${
-                    isActive
-                      ? 'bg-dark-card text-dark-text-primary'
-                      : 'text-dark-text-secondary'
+                  `relative flex items-center gap-3 rounded-lg px-3 py-2 transition-colors hover:text-dark-text-primary ${
+                    isActive ? 'text-accent-primary' : 'text-dark-text-secondary'
                   }`
                 }
               >
-                <Icon className="h-5 w-5" />
-                {t(label)}
+                {({ isActive }) => (
+                  <>
+                    {isActive && (
+                      <motion.span
+                        layoutId="sidebar-pill"
+                        className="absolute inset-0 rounded-lg bg-accent-primary/15"
+                        transition={{ type: 'spring', bounce: 0.18, duration: 0.4 }}
+                      />
+                    )}
+                    <Icon className="relative z-10 h-5 w-5" />
+                    <span className="relative z-10">{t(label)}</span>
+                  </>
+                )}
               </NavLink>
             ))}
           </nav>
         </div>
-        <div className="mt-auto flex flex-col gap-4 p-4 border-t border-dark-border">
-          <div className="flex justify-between items-center">
+        <div className="mt-auto flex flex-col gap-4 border-t border-dark-border p-4">
+          <div className="flex items-center justify-between">
             <SocialLinks />
             <LanguageSwitcher />
           </div>

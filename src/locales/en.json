@@ -10,16 +10,66 @@
     "title": "Software Architect & Full-Stack Developer",
     "bio": "With over 9 years of experience, I specialize in building robust, scalable, and high-availability software systems. My primary focus is on the backend, using technologies like .NET and PHP to create secure and efficient solutions. I am passionate about clean architecture design, database optimization, and implementing agile methodologies to deliver quality products.",
     "view_resume": "View my Resume",
-    "download_cv": "Download CV (PDF)"
+    "download_cv": "Download CV (PDF)",
+    "view_projects": "View projects",
+    "chips": {
+      "years": "9+ years",
+      "stack": ".NET / Azure",
+      "cert": "TOGAF"
+    }
   },
   "experience": {
     "title": "Technologies & Experience",
-    "description": "Throughout my career, I have worked with a wide range of tools and technologies that allow me to tackle complex projects from different angles."
+    "description": "Throughout my career, I have worked with a wide range of tools and technologies that allow me to tackle complex projects from different angles.",
+    "groups": {
+      "backend": "Backend",
+      "frontend": "Frontend",
+      "desktop": "Cross-platform",
+      "ecommerce": "E-commerce",
+      "data": "Databases",
+      "infra": "Infrastructure",
+      "devops": "Observability and CI/CD",
+      "ai": "Artificial intelligence"
+    }
   },
   "projects": {
     "title": "Featured Projects",
     "description": "A selection of projects I've worked on, demonstrating my ability to deliver solutions across various industries and platforms.",
-    "button": "View more"
+    "button": "View more",
+    "items": {
+      "mazamitla": {
+        "title": "Mazamitla Sierra Tours",
+        "desc": "Tours and reservations platform"
+      },
+      "voguex": {
+        "title": "Voguex",
+        "desc": "Wedding marketplace"
+      },
+      "asturiano": {
+        "title": "Tiendas El Asturiano",
+        "desc": "Mobile apps and ecommerce"
+      },
+      "macclipboard": {
+        "title": "MacClipboard",
+        "desc": "Open source project for Mac"
+      },
+      "portfolio": {
+        "title": "Personal portfolio",
+        "desc": "This portfolio, built with React and TypeScript"
+      },
+      "helpdesk": {
+        "title": "Help Desk",
+        "desc": "Open source ticketing system"
+      },
+      "pinochueco": {
+        "title": "Pinochueco",
+        "desc": "Website for the Pinochueco cabins"
+      },
+      "simplestock": {
+        "title": "SimpleStock",
+        "desc": "Open source inventory system"
+      }
+    }
   },
   "resume": {
     "title": "Resume",

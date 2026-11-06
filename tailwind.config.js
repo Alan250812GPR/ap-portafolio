@@ -9,15 +9,16 @@ export default {
     extend: {
       colors: {
         dark: {
-          'bg': '#111827',
-          'card': '#1F2937',
-          'border': '#374151',
-          'text-primary': '#F9FAFB',
-          'text-secondary': '#9CA3AF',
+          'bg': '#13284A',
+          'card': '#203A65',
+          'border': '#38578A',
+          'text-primary': '#F4F7FB',
+          'text-secondary': '#A8C8EA',
         },
         accent: {
-          'primary': '#3B82F6',
-          'hover': '#2563EB',
+          'primary': '#FFC61A',
+          'hover': '#E6AC00',
+          'foreground': '#13284A',
         }
       }
     },
