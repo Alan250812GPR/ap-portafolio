@@ -15,7 +15,7 @@ Alan Parra is a Software Architect and Full-Stack Developer specializing in back
 ## Core Skills
 
 ### Backend
-.NET / C#, PHP, Laravel, Symfony, Node.js / NestJS
+.NET / C#, PHP, Laravel, Symfony, Node.js / NestJS, Java, Kotlin
 
 ### Frontend
 React, Angular, React Native, .NET MAUI, Avalonia UI, TypeScript, JavaScript, TailwindCSS

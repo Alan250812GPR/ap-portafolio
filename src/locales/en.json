@@ -182,7 +182,7 @@
       "groups": [
         {
           "group": "Languages & Platforms",
-          "items": "C#, .NET 8/9, PHP, JavaScript, TypeScript, SQL, Java, WinDev, Bash"
+          "items": "C#, .NET 8/9, PHP, JavaScript, TypeScript, SQL, Java, Kotlin, WinDev, Bash"
         },
         {
           "group": "Frameworks & Technologies",

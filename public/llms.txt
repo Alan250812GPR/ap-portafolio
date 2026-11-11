@@ -9,7 +9,7 @@
 - **Experience:** 9+ years
 
 ## Core Skills
-- Backend: .NET / C#, PHP (Laravel, Symfony), Node.js / NestJS
+- Backend: .NET / C#, PHP (Laravel, Symfony), Node.js / NestJS, Java, Kotlin
 - Frontend: React, Angular, React Native, TypeScript
 - Cloud & DevOps: Microsoft Azure, Docker, CI/CD
 - Architecture: Clean Architecture, Hexagonal Architecture, Microservices, RESTful APIs
