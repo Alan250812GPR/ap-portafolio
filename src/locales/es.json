@@ -2,6 +2,10 @@
   "status": {
     "loading": "Cargando"
   },
+  "welcome": {
+    "scramble": "Bienvenido a mi portafolio",
+    "agent": "agente"
+  },
   "nav": {
     "home": "Inicio",
     "experience": "Experiencia",

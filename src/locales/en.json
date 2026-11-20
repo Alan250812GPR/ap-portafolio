@@ -2,6 +2,10 @@
   "status": {
     "loading": "Loading"
   },
+  "welcome": {
+    "scramble": "Welcome to my portfolio",
+    "agent": "agent"
+  },
   "nav": {
     "home": "Home",
     "experience": "Experience",

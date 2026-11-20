@@ -7,6 +7,7 @@ import MobileNav, { MobileBottomNav } from '@/components/organisms/MobileNav';
 import CallToAction from '@/components/molecules/CallToAction';
 import SceneBackground from '@/components/atoms/SceneBackground';
 import { ExperienceSkeleton, HomeSkeleton, ProjectsSkeleton, ResumeSkeleton } from '@/components/atoms/Skeleton';
+import WelcomeScramble from '@/components/atoms/WelcomeScramble';
 import useScrollToTop from '@/hooks/useScrollToTop';
 
 const Home = lazy(() => import('@/pages/Home'));
@@ -22,7 +23,7 @@ function PageSkeleton() {
   return <HomeSkeleton />;
 }
 
-const SKELETON_MS = 1500;
+const SKELETON_MS = 1000;
 
 let routePause: { pathname: string; done: boolean; promise: Promise<void> } | null = null;
 
@@ -80,6 +81,7 @@ function HomeScene() {
 function App() {
   return (
     <MotionConfig reducedMotion="user">
+    <WelcomeScramble />
     <Router>
       <div className="grid min-h-screen w-full md:grid-cols-[280px_minmax(0,1fr)]">
         <Sidebar />
