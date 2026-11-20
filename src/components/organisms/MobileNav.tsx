@@ -1,7 +1,7 @@
 import React from 'react';
 import { NavLink, useLocation } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import { motion } from 'framer-motion';
+import { motion } from 'motion/react';
 import { Home, Briefcase, Code, FileText } from 'lucide-react';
 import DevAPLogo from '/DevAP.svg';
 
@@ -21,7 +21,7 @@ const MobileNav: React.FC = () => {
 
   return (
     <header className="sticky top-0 z-20 flex h-16 items-center justify-between gap-4 border-b border-dark-border bg-dark-bg px-4 md:hidden">
-      <NavLink to="/" className="flex items-center gap-2 font-semibold">
+      <NavLink to="/" className="flex items-center gap-2 font-semibold transition-transform duration-150 ease-out motion-safe:active:scale-[0.98]">
         <img src={DevAPLogo} alt="DevAP Logo" className="h-8 w-8" />
         <span className="text-lg text-dark-text-primary">{currentPageTitle}</span>
       </NavLink>
@@ -48,7 +48,7 @@ const MobileBottomNav: React.FC = () => {
             key={to}
             to={to}
             className={({ isActive }) =>
-              `relative flex flex-col items-center justify-center gap-1 rounded-lg p-2 transition-colors ${
+              `relative flex flex-col items-center justify-center gap-1 rounded-lg p-2 transition-[color,transform] duration-150 ease-out motion-safe:active:scale-[0.98] ${
                 isActive
                   ? 'text-accent-primary'
                   : 'text-dark-text-secondary hover:text-dark-text-primary'

@@ -32,7 +32,7 @@ const SocialLinks: React.FC = () => {
           target="_blank"
           rel="noopener noreferrer"
           aria-label={t(label)}
-          className="flex h-10 w-10 items-center justify-center rounded-md text-dark-text-secondary transition-colors hover:bg-dark-card hover:text-accent-primary"
+          className="flex h-10 w-10 items-center justify-center rounded-md text-dark-text-secondary transition-[color,background-color,transform] duration-150 ease-out hover:bg-dark-card hover:text-accent-primary motion-safe:active:scale-[0.98]"
         >
           <Icon className="h-5 w-5" />
         </a>

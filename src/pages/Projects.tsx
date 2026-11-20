@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import { motion } from 'framer-motion';
+import { motion } from 'motion/react';
 import { ArrowUpRight } from 'lucide-react';
 import Seo from '@/components/atoms/Seo';
 import { fadeUp, stagger, viewport } from '@/motion';
@@ -20,6 +20,7 @@ const projectsData = [
 
 const ProjectImage: React.FC<{ src: string; title: string }> = ({ src, title }) => {
   const [imageError, setImageError] = useState(false);
+  const [imageReady, setImageReady] = useState(false);
 
   if (imageError) {
     return (
@@ -32,12 +33,17 @@ const ProjectImage: React.FC<{ src: string; title: string }> = ({ src, title }) 
   }
 
   return (
-    <img
-      src={src}
-      alt=""
-      className="max-h-full max-w-full object-contain motion-safe:transition-transform motion-safe:duration-300 motion-safe:group-hover:scale-105"
-      onError={() => setImageError(true)}
-    />
+    <>
+      {!imageReady && <div aria-hidden className="skeleton absolute inset-6 rounded-md" />}
+      <img
+        src={src}
+        alt=""
+        loading="lazy"
+        onLoad={() => setImageReady(true)}
+        className={`max-h-full max-w-full object-contain motion-safe:transition motion-safe:duration-300 motion-safe:group-hover:scale-105 ${imageReady ? 'opacity-100' : 'opacity-0'}`}
+        onError={() => setImageError(true)}
+      />
+    </>
   );
 };
 
@@ -66,9 +72,11 @@ const Projects: React.FC = () => {
               rel="noopener noreferrer"
               variants={fadeUp}
               whileHover={{ y: -4 }}
+              whileTap={{ scale: 0.985 }}
+              transition={{ duration: 0.18, ease: 'easeOut' }}
               className="group relative flex flex-col overflow-hidden rounded-lg bg-dark-card shadow-lg"
             >
-              <div className="flex h-40 items-center justify-center overflow-hidden bg-white/5 p-4">
+              <div className="relative flex h-40 items-center justify-center overflow-hidden bg-white/5 p-4">
                 <ProjectImage src={imageUrl} title={title} />
               </div>
               <div className="flex flex-1 flex-col p-4">

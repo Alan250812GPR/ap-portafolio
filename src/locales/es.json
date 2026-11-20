@@ -1,4 +1,7 @@
 {
+  "status": {
+    "loading": "Cargando"
+  },
   "nav": {
     "home": "Inicio",
     "experience": "Experiencia",

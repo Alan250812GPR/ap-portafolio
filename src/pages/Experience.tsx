@@ -1,6 +1,6 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
-import { motion } from 'framer-motion';
+import { motion } from 'motion/react';
 import Seo from '@/components/atoms/Seo';
 import { fadeUp, stagger, viewport } from '@/motion';
 
@@ -93,6 +93,26 @@ const groups: { id: string; items: Tech[] }[] = [
   },
 ];
 
+const TechIcon: React.FC<{ src: string }> = ({ src }) => {
+  const [ready, setReady] = React.useState(false);
+
+  return (
+    <span className="relative h-12 w-12">
+      {!ready && <span aria-hidden className="skeleton absolute inset-0 rounded-md" />}
+      <img
+        src={src}
+        alt=""
+        loading="lazy"
+        width={48}
+        height={48}
+        onLoad={() => setReady(true)}
+        onError={() => setReady(true)}
+        className={`h-12 w-12 rounded-md object-contain ${ready ? 'opacity-100' : 'opacity-0'}`}
+      />
+    </span>
+  );
+};
+
 const Experience: React.FC = () => {
   const { t } = useTranslation();
 
@@ -125,7 +145,7 @@ const Experience: React.FC = () => {
                   whileHover={{ y: -4 }}
                   className="flex flex-col items-center justify-center gap-3 rounded-lg border border-transparent bg-dark-card p-6 transition-colors hover:border-dark-border"
                 >
-                  <img src={tech.icon} alt="" className="h-12 w-12 rounded-md object-contain" />
+                  <TechIcon src={tech.icon} />
                   <span className="break-words text-center text-sm font-medium text-dark-text-primary">{tech.name}</span>
                 </motion.div>
               ))}

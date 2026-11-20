@@ -19,12 +19,30 @@
 
 @layer components {
   .btn-primary {
-    @apply inline-flex items-center justify-center gap-2 rounded-md bg-accent-primary px-6 py-3 text-base font-semibold text-accent-foreground shadow-sm transition-all hover:bg-accent-hover motion-safe:hover:-translate-y-0.5 motion-safe:hover:shadow-lg;
+    @apply inline-flex items-center justify-center gap-2 rounded-md bg-accent-primary px-6 py-3 text-base font-semibold text-accent-foreground shadow-sm transition-all duration-150 ease-out hover:bg-accent-hover motion-safe:hover:-translate-y-0.5 motion-safe:hover:shadow-lg motion-safe:active:scale-[0.98];
   }
 
   .btn-secondary {
-    @apply inline-flex items-center justify-center gap-2 rounded-md border border-dark-border bg-dark-card px-6 py-3 text-base font-semibold text-dark-text-primary shadow-sm transition-all hover:bg-dark-border motion-safe:hover:-translate-y-0.5 motion-safe:hover:shadow-lg;
+    @apply inline-flex items-center justify-center gap-2 rounded-md border border-dark-border bg-dark-card px-6 py-3 text-base font-semibold text-dark-text-primary shadow-sm transition-all duration-150 ease-out hover:bg-dark-border motion-safe:hover:-translate-y-0.5 motion-safe:hover:shadow-lg motion-safe:active:scale-[0.98];
   }
+
+  .skeleton {
+    background-color: #38578a;
+    background-image: linear-gradient(100deg, transparent 20%, rgb(244 247 251 / 0.16) 50%, transparent 80%);
+    background-size: 200% 100%;
+    background-repeat: no-repeat;
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .skeleton {
+    animation: skeleton-sheen 1.4s ease-in-out infinite;
+  }
+}
+
+@keyframes skeleton-sheen {
+  from { background-position: 120% 0; }
+  to { background-position: -120% 0; }
 }
 
 @media (prefers-reduced-motion: reduce) {

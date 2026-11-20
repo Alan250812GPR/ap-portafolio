@@ -1,6 +1,6 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
-import { motion } from 'framer-motion';
+import { motion } from 'motion/react';
 import {
   Download,
   Briefcase,
@@ -15,7 +15,7 @@ import {
 } from 'lucide-react';
 import Seo from '@/components/atoms/Seo';
 import { fadeUp, viewport } from '@/motion';
-import resumePdf from '../assets/Alan Gilberto Parra Robledo.pdf';
+import { useResumePdf } from '@/hooks/useResumePdf';
 
 type ExperienceItem = {
   role: string;
@@ -71,6 +71,7 @@ const SectionTitle: React.FC<{ icon: React.ElementType; children: React.ReactNod
 
 const Resume: React.FC = () => {
   const { t } = useTranslation();
+  const resumePdf = useResumePdf();
 
   const experience = t('resume.experience.items', { returnObjects: true }) as unknown as ExperienceItem[];
   const projects = t('resume.projects.items', { returnObjects: true }) as unknown as ProjectItem[];
@@ -91,7 +92,8 @@ const Resume: React.FC = () => {
           <p className="mt-4 text-lg text-dark-text-secondary">{t('resume.description')}</p>
         </div>
         <a
-          href={resumePdf}
+          href={resumePdf.href}
+          download={resumePdf.filename}
           target="_blank"
           rel="noopener noreferrer"
           className="btn-primary shrink-0"
@@ -106,7 +108,7 @@ const Resume: React.FC = () => {
           <a
             key={section.id}
             href={`#${section.id}`}
-            className="shrink-0 rounded-full bg-dark-card px-3 py-1 text-sm font-medium text-dark-text-secondary ring-1 ring-dark-border transition-colors hover:text-accent-primary"
+            className="shrink-0 rounded-full bg-dark-card px-3 py-1 text-sm font-medium text-dark-text-secondary ring-1 ring-dark-border transition-[color,transform] duration-150 ease-out hover:text-accent-primary motion-safe:active:scale-[0.98]"
           >
             {t(section.label)}
           </a>

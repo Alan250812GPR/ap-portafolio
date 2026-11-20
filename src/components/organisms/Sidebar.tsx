@@ -1,7 +1,7 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import { motion } from 'framer-motion';
+import { motion } from 'motion/react';
 import { Home, Briefcase, Code, FileText } from 'lucide-react';
 import DevAPLogo from '/DevAP.svg';
 
@@ -22,7 +22,7 @@ const Sidebar: React.FC = () => {
     <aside className="sticky top-0 hidden h-screen border-r border-dark-border bg-dark-bg md:block">
       <div className="flex h-full max-h-screen flex-col gap-2">
         <div className="flex h-16 items-center border-b border-dark-border px-6">
-          <NavLink to="/" className="flex items-center gap-2 font-semibold">
+          <NavLink to="/" className="flex items-center gap-2 font-semibold transition-transform duration-150 ease-out motion-safe:active:scale-[0.98]">
             <img src={DevAPLogo} alt="DevAP Logo" className="h-8 w-8" />
             <span className="text-lg text-dark-text-primary">Alan Parra</span>
           </NavLink>
@@ -34,7 +34,7 @@ const Sidebar: React.FC = () => {
                 key={to}
                 to={to}
                 className={({ isActive }) =>
-                  `relative flex items-center gap-3 rounded-lg px-3 py-2 transition-colors hover:text-dark-text-primary ${
+                  `relative flex items-center gap-3 rounded-lg px-3 py-2 transition-[color,transform] duration-150 ease-out hover:text-dark-text-primary motion-safe:active:scale-[0.98] ${
                     isActive ? 'text-accent-primary' : 'text-dark-text-secondary'
                   }`
                 }
